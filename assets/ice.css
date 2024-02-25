@@ -47,3 +47,8 @@ body {
   color: #2b2929; 
 }
 
+/* About section styles */
+.about_ice {
+  padding: 60px 0;
+  background-color: #faf5ee; 
+}
