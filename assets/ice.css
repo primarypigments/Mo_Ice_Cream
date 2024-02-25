@@ -24,3 +24,26 @@ body {
   color: #e96a3f; 
 }
 
+/* Hero section styles */
+.hero_ice {
+  background-size: cover;
+  background-position: center;
+  color: #e96a3f; 
+  padding: 80px 0;
+  text-align: center;
+}
+
+.hero_ice h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  color: #2b2929; 
+}
+
+.hero_ice p {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #2b2929; 
+}
+
