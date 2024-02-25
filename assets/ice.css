@@ -102,3 +102,11 @@ body {
   color: #555;
 }
 
+/* Footer styles */
+.footer {
+  background-color: #2b2929; 
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
