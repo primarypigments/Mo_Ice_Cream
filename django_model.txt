@@ -1,0 +1,25 @@
+Mo Ice Cream Shop
+|-- name (CharField)
+|-- location (CharField)
+|-- phone_number (CharField)
+|-- email (EmailField)
+|-- website (URLField)
+|-- menu (ForeignKey(Menu))
+
+Menu
+|-- name (CharField)
+|-- description (TextField)
+|-- price (DecimalField)
+|-- flavor (CharField)
+
+Reservation
+|-- customer (ForeignKey(User))
+|-- time_slot (DateTimeField)
+|-- date (DateField)
+|-- status (ForeignKey(ReservationStatus))
+|-- is_cancelable (BooleanField)
+
+User (built-in Django User model)
+
+ReservationStatus
+|-- name (CharField)
