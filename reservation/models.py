@@ -29,3 +29,9 @@ class Reservation(models.Model):
     date = models.DateField()
     ice_status = models.ForeignKey(IceReservationStatus, on_delete=models.CASCADE)
     is_cancelable = models.BooleanField(default=True)
+
+    def __str__(self):
+        return f"Reservation for {self.customer_name} on {self.date} at {self.time_slot}"
+
+
+
