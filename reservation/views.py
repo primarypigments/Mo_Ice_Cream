@@ -1,7 +1,10 @@
+import json
 from django.shortcuts import render
 from django.views.generic.edit import CreateView
 from .models import Reservation
 from django.urls import reverse_lazy
+from django.http import JsonResponse
+import datetime
 
 # Landing page view for testing and debugging
 def ice_reservation_home(request):
@@ -20,3 +23,34 @@ class IceReservationCreateView(CreateView):
     fields = ['ice_customer', 'ice_time_slot', 'date', 'ice_status', 'is_cancelable']
     success_url = reverse_lazy('reservation_success')
 
+
+def available_ice_slots(request):
+    # Assuming you want to fetch reservations for a specific range
+    start_date = datetime.date.today()
+    end_date = start_date + datetime.timedelta(days=30)  # Adjust the range as needed
+
+    # Fetching reservations within the specified date range
+    reservations = Reservation.objects.filter(date__range=(start_date, end_date))
+
+    # Formatting the reservations data for FullCalendar
+    events = [
+        {
+            "title": "Unavailable",  # Or any title you want to show on the calendar
+            "start": reservation.time_slot.isoformat(),
+            "end": (reservation.time_slot + datetime.timedelta(hours=1)).isoformat(),  # Adjust according to your needs
+        }
+        for reservation in reservations
+    ]
+
+    return JsonResponse(events, safe=False)
+
+
+            reservation.full_clean()  # Django's built-in model validation link ----  https://docs.djangoproject.com/en/5.0/ref/models/instances/
+            reservation.save()
+            return JsonResponse({'ice_status': 'success', 'message': 'Reservation submitted successfully.'}, ice_status=200)
+        except ValidationError as e:
+            return JsonResponse({'ice_status': 'error', 'message': e.messages}, ice_status=400)
+        except Exception as e:
+            return JsonResponse({'ice_status': 'error', 'message': str(e)}, ice_status=500)
+    else:
+        return JsonResponse({'ice_status': 'error', 'message': 'Invalid request'}, ice_status=400)
