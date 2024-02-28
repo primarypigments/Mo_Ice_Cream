@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import IceReservationStatus, Reservation
 
-# Register your models here.
+admin.site.register(IceReservationStatus)
+admin.site.register(Reservation)
