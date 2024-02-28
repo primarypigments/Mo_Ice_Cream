@@ -118,6 +118,23 @@
         });
     </script>
     
+    <!-- FullCalendar Integration -->
+    <script>
+        //  This script initializes the FullCalendar.
+        // FullCalendar Documentation: https://fullcalendar.io/docs
+        // https://stackoverflow.com/questions/67322186/fullcalendar-not-showing-google-calendar-data
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                events: '/reservations/availability/', // URL to fetch events
+            });
+            calendar.render();
+        });
+    </script>
+ 
+
+
       <!-- Footer -->
       <footer class="footer text-center">
         <p>&copy; 2024 Mo Ice Cream . All rights reserved.</p>
