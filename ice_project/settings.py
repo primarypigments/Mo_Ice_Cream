@@ -28,9 +28,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '8000-primarypigme-moicecream-4qqhqi6wgt0.ws-eu108.gitpod.io'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['8000-primarypigme-moicecream-4qqhqi6wgt0.ws-eu108.gitpod.io','.herokuapp.com']
+ALLOWED_HOSTS = ['8080-primarypigme-moicecream-4qqhqi6wgt0.ws-eu108.gitpod.io']
 
 
 # Application definition
@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'index',
+    'reservation',
 ]
 
 MIDDLEWARE = [
