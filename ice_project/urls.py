@@ -16,11 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from index import views as index_views  
+from django.views.generic.base import RedirectView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', index_views.my_index, name='root'),  
-    path('index/', index_views.my_index, name='index'),  
+    path('reservation/', include('reservation.urls')),
+    # Redirect root URL to reservation app
+    path('', RedirectView.as_view(url='/reservation/', permanent=True)),
 ]
+
+    
 
