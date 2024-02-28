@@ -80,6 +80,44 @@
   </div>
 </section>
 <!-- End Reservation Form Section -->
+    
+    <!--Form Submission-->
+    <script>
+        // Note: The event listener is for handling form submission.
+        // Event Listener documentation: https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+        document.getElementById("reservationForm").addEventListener("submit", function(e) {
+            e.preventDefault(); // Prevent the default form submission behavior(not reloading the page). documentation:.https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault
+            var formData = {
+                name: document.getElementById("customerName").value,
+                email: document.getElementById("customerEmail").value,
+                date: document.getElementById("reservationDate").value,
+                timeSlot: document.getElementById("timeSlot").value,
+            };
+    
+            // Fetch API for making network requests.
+            // Fetch API documentation: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+            // For handling JSON and forms with Bootstrap: https://getbootstrap.com/docs/5.3/forms/form-control/
+            fetch('submit_reservation/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    // I need to include CSRF token at a later time
+                },
+                body: JSON.stringify(formData),
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                alert("Reservation submitted successfully!");
+                document.getElementById("reservationForm").reset(); // Optional: Reset form fields after successful submission
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+                alert("Error submitting reservation. Please try again.");
+            });
+        });
+    </script>
+    
       <!-- Footer -->
       <footer class="footer text-center">
         <p>&copy; 2024 Mo Ice Cream . All rights reserved.</p>
