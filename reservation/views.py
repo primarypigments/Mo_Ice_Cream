@@ -5,6 +5,9 @@ from .models import Reservation
 from django.urls import reverse_lazy
 from django.http import JsonResponse
 import datetime
+from django.core.exceptions import ValidationError
+from django.views.decorators.csrf import csrf_exempt
+
 
 # Landing page view for testing and debugging
 def ice_reservation_home(request):
@@ -45,6 +48,20 @@ def available_ice_slots(request):
     return JsonResponse(events, safe=False)
 
 
+@csrf_exempt
+def submit_ice_reservation(request):
+    if request.method == 'POST':
+        try:
+            data = json.loads(request.body)
+            # i will need to  add validate data later
+            reservation = Reservation(
+                ice_customer_name=data['name'],
+                ice_customer_email=data['email'],
+                date=data['date'],
+                ice_time_slot=data['timeSlot'],
+                is_cancelable=True,
+                
+            )
             reservation.full_clean()  # Django's built-in model validation link ----  https://docs.djangoproject.com/en/5.0/ref/models/instances/
             reservation.save()
             return JsonResponse({'ice_status': 'success', 'message': 'Reservation submitted successfully.'}, ice_status=200)
