@@ -22,7 +22,7 @@ class Reservation(models.Model):
 
 
     """
-    ice_customer = modrls.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    ice_customer = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     ice_customer_name = models.CharField(max_length=100, default='No Name Provided') #Need to add valivation on a later note
     ice_customer_email = models.EmailField(default='non_helper@example.com')
     ice_time_slot = models.DateTimeField()
