@@ -64,10 +64,10 @@ def submit_ice_reservation(request):
             )
             reservation.full_clean()  # Django's built-in model validation link ----  https://docs.djangoproject.com/en/5.0/ref/models/instances/
             reservation.save()
-            return JsonResponse({'ice_status': 'success', 'message': 'Reservation submitted successfully.'}, ice_status=200)
+            return JsonResponse({'ice_status': 'success', 'message': 'Reservation submitted successfully.'}, status=200)
         except ValidationError as e:
-            return JsonResponse({'ice_status': 'error', 'message': e.messages}, ice_status=400)
+            return JsonResponse({'status': 'error', 'message': e.messages}, status=400)
         except Exception as e:
-            return JsonResponse({'ice_status': 'error', 'message': str(e)}, ice_status=500)
+            return JsonResponse({'ice_status': 'error', 'message': str(e)}, status=500)
     else:
-        return JsonResponse({'ice_status': 'error', 'message': 'Invalid request'}, ice_status=400)
+        return JsonResponse({'ice_status': 'error', 'message': 'Invalid request'}, status=400)
