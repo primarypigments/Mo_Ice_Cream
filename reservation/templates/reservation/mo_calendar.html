@@ -43,7 +43,43 @@
     <div id='calendar'></div>
     <!-- This div is a placeholder for FullCalendar .
          FullCalendar Documentation: https://fullcalendar.io/docs -->
-
+    
+   <!-- Reservation Form Section -->
+<section id="make-reservation" class="mt-5">
+  <!-- Bootstrap 5.3 Container Documentation: https://getbootstrap.com/docs/5.3/layout/containers/ -->
+  <div class="container">
+      <h2 class="text-center mb-4">Make a Reservation</h2>
+      <!-- Bootstrap 5.3 Forms Documentation: https://getbootstrap.com/docs/5.3/forms/overview/ -->
+      <form id="reservationForm">
+          <!-- Bootstrap 5.3 Form Control Documentation: https://getbootstrap.com/docs/5.3/forms/form-control/ -->
+          <div class="mb-3">
+              <label for="customerName" class="form-label">Name</label>
+              <input type="text" class="form-control" id="customerName" required>
+          </div>
+          <div class="mb-3">
+              <label for="customerEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="customerEmail" required>
+          </div>
+          <div class="mb-3">
+              <label for="reservationDate" class="form-label">Date</label>
+              <input type="date" class="form-control" id="reservationDate" required>
+          </div>
+          <div class="mb-3">
+              <label for="timeSlot" class="form-label">Time Slot</label>
+              <!-- Bootstrap 5.3 Form Select Documentation: https://getbootstrap.com/docs/5.3/forms/select/ -->
+              <select class="form-select" id="timeSlot" required>
+                  <option selected>Choose...</option>
+                  <option value="Morning">Morning</option>
+                  <option value="Afternoon">Afternoon</option>
+                  <option value="Evening">Evening</option>
+              </select>
+          </div>
+          <!-- Bootstrap 5.3 Buttons Documentation: https://getbootstrap.com/docs/5.3/components/buttons/ -->
+          <button type="submit" class="btn btn-primary">Submit Reservation</button>
+      </form>
+  </div>
+</section>
+<!-- End Reservation Form Section -->
       <!-- Footer -->
       <footer class="footer text-center">
         <p>&copy; 2024 Mo Ice Cream . All rights reserved.</p>
