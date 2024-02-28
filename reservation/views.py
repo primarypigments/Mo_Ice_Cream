@@ -1,6 +1,11 @@
+from django.shortcuts import render
 from django.views.generic.edit import CreateView
 from .models import Reservation
 from django.urls import reverse_lazy
+
+# Landing page view for testing and debugging
+def ice_reservation_home(request):
+    return render(request, 'reservation/mo_calendar.html')
 
 class IceReservationCreateView(CreateView):
     """
