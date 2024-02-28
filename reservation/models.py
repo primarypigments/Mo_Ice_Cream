@@ -31,7 +31,4 @@ class Reservation(models.Model):
     is_cancelable = models.BooleanField(default=True)
 
     def __str__(self):
-        return f"Reservation for {self.customer_name} on {self.date} at {self.time_slot}"
-
-
-
+       return f"Reservation for {self.ice_customer_name} on {self.date} at {self.ice_time_slot}"
