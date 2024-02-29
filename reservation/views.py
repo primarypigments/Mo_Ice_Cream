@@ -54,6 +54,13 @@ def submit_ice_reservation(request):
         try:
             data = json.loads(request.body)
             data.pop('ice_status', None)  # Ensure 'ice_status' is not in the request body
+
+            try:
+                default_status = IceReservationStatus.objects.get(ice_status='pending')
+            except IceReservationStatus.DoesNotExist:
+                logger.error("Default IceReservationStatus 'pending' does not exist.")
+                return JsonResponse({'status': 'error', 'message': 'Internal server error: Default reservation status not found.'}, status=500)
+
             form = ReservationForm(data)
             if form.is_valid():
                 try:
