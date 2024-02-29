@@ -50,13 +50,25 @@ def available_ice_slots(request):
 
     return JsonResponse(events, safe=False)
 
+User = get_user_model()  # I need to create a custum user model
 
-@csrf_exempt
 def submit_ice_reservation(request):
-    if request.method == 'POST':
-        try:
-            data = json.loads(request.body)
-            data.pop('ice_status', None)  # Ensure 'ice_status' is not in the request body
+    if request.method != 'POST':
+        logger.warn("Attempted non-POST request to submit_ice_reservation.")
+        return JsonResponse({'status': 'error', 'message': 'Invalid request method. Only POST requests are accepted.'}, status=400)
+
+    user_email = data.get('ice_customer_email')
+    if not user_email:
+        logger.error(f"User email not provided in the request data: {data}")
+        return JsonResponse({'status': 'error', 'message': 'User email is required.'}, status=400)
+
+    try:
+        user, created = User.objects.get_or_create(email=user_email, #This is a working model needs to be more precise
+        defaults={'username': data.get('name', user_email)})  # Default username to email if name not provided
+        data['ice_customer'] = user.pk  # Set the user's primary key as the ice_customer
+    except Exception as e:
+        logger.error(f"Error fetching or creating User: {e}")
+        return JsonResponse({'status': 'error', 'message': 'Error processing user information.'}, status=500)
 
             try:
                 default_status = IceReservationStatus.objects.get(ice_status='pending')
