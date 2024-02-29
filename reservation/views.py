@@ -79,32 +79,27 @@ def submit_ice_reservation(request):
         logger.error(f"Error fetching or creating User: {e}")
         return JsonResponse({'status': 'error', 'message': 'Error processing user information.'}, status=500)
 
-            try:
-                default_status = IceReservationStatus.objects.get(ice_status='pending')
-            except IceReservationStatus.DoesNotExist:
-                logger.error("Default IceReservationStatus 'pending' does not exist.")
-                return JsonResponse({'status': 'error', 'message': 'Internal server error: Default reservation status not found.'}, status=500)
+    try:
+        default_status = IceReservationStatus.objects.get(ice_status='pending')
+    except IceReservationStatus.DoesNotExist:
+        logger.error("Default IceReservationStatus 'pending' does not exist.")
+        return JsonResponse({'status': 'error', 'message': 'Internal server error: Default reservation status not found.'}, status=500)
 
-            form = ReservationForm(data)
-            if form.is_valid():
-                try:
-                    with transaction.atomic():
-                        reservation_instance = form.save(commit=False)
-                        reservation_instance.ice_status = default_status
-                        reservation_instance.save()
-                        return JsonResponse({'status': 'success', 'message': 'Reservation submitted successfully.'}, status=200)
-                except IntegrityError as e:
-                    logger.error(f"Database integrity error when saving reservation: {e}")
-                    return JsonResponse({'status': 'error', 'message': 'Internal server error: Database operation failed.'}, status=500)
-            else:
-                logger.error(f"Form validation error: {form.errors.as_json()}")
-                return JsonResponse({'status': 'error', 'message': form.errors.as_json()}, status=400)
-        except json.JSONDecodeError as e:
-            logger.error(f"JSON decode error in request body: {e}")
-            return JsonResponse({'status': 'error', 'message': 'Invalid JSON format.'}, status=400)
-        except Exception as e:
-            logger.error(f"Unexpected error: {e}")
-            return JsonResponse({'status': 'error', 'message': 'Internal server error.'}, status=500)
-    else:
-        logger.warn("Attempted non-POST request to submit_ice_reservation.")
-        return JsonResponse({'status': 'error', 'message': 'Invalid request method.'}, status=400)
+    form = ReservationForm(data)
+    if not form.is_valid():
+        logger.error(f"Form validation error: {form.errors.as_json()}")
+        return JsonResponse({'status': 'error', 'message': form.errors.as_json()}, status=400)
+
+    try:
+        with transaction.atomic():
+            reservation_instance = form.save(commit=False)
+            reservation_instance.ice_status = default_status
+            reservation_instance.ice_customer = user  # Assign the user to the reservation
+            reservation_instance.save()
+            return JsonResponse({'status': 'success', 'message': 'Reservation submitted successfully.'}, status=200)
+    except IntegrityError as e:
+        logger.error(f"Database integrity error when saving reservation: {e}")
+        return JsonResponse({'status': 'error', 'message': 'Internal server error: Database operation failed.'}, status=500)
+    except Exception as e:
+        logger.error(f"Unexpected error while saving reservation: {e}")
+        return JsonResponse({'status': 'error', 'message': 'Internal server error.'}, status=500)
