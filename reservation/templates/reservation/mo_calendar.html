@@ -1,156 +1,171 @@
 <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Mo Ice Cream</title>
-    <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.0.0/fullcalendar.min.css' rel='stylesheet' />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/ice.css">
-  </head>
-  <body>
+<html lang="en">
 
-    <!-- Navigation Bar -->
-    <nav class="navbar_ice navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Mo Ice Cream</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Mo Ice Cream</title>
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.0.0/fullcalendar.min.css' rel='stylesheet' />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/ice.css">
+</head>
 
-    <!-- Hero Section -->
-    <section class="hero_ice" style="background-image: url('assets/images/hero.jpg'); background-size: cover; background-position: center;">
-      <div class="container text-center text-light">
-        
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar_ice navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Mo Ice Cream</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
-          <form method="post" id="reservationForm">
-            {% csrf_token %}
-          <!-- Bootstrap 5.3 Forms Documentation: https://getbootstrap.com/docs/5.3/forms/overview/ -->
-          <form id="reservationForm">
-            <!-- Bootstrap 5.3 Form Control Documentation: https://getbootstrap.com/docs/5.3/forms/form-control/ -->
-            <div class="mb-3">
-              <label for="customerName" class="form-label">Name</label>
-              <input type="text" class="form-control" id="customerName" required>
-            </div>
-            <div class="mb-3">
-              <label for="customerEmail" class="form-label">Email</label>
-              <input type="email" class="form-control" id="customerEmail" required>
-            </div>
-            <div class="mb-3">
-              <label for="reservationDate" class="form-label">Date</label>
-              <input type="date" class="form-control" id="reservationDate" required>
-            </div>
-            <div class="mb-3">
-              <label for="timeSlot" class="form-label">Time Slot</label>
-              <!-- Bootstrap 5.3 Form Select Documentation: https://getbootstrap.com/docs/5.3/forms/select/ -->
-              <select class="form-select" id="timeSlot" required>
-                <option selected>Choose...</option>
-                <option value="Morning">Morning</option>
-                <option value="Afternoon">Afternoon</option>
-                <option value="Evening">Evening</option>
-              </select>
-            </div>
-            <!-- Bootstrap 5.3 Buttons Documentation: https://getbootstrap.com/docs/5.3/components/buttons/ -->
-            <button type="submit" class="btn btn-primary">Submit Reservation</button>
-          </form>
-        </div>
-      </section>
-<!-- End Reservation Form Section -->
-    
-    <!--Form Submission-->
-    <script>
-          // Function to get CSRF token from cookie
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero_ice"
+    style="background-image: url('assets/images/hero.jpg'); background-size: cover; background-position: center;">
+    <div class="container text-center text-light">
+
+    </div>
+  </section>
+  <div id='calendar'></div>
+  <!-- This div is a placeholder for FullCalendar .
+               FullCalendar Documentation: https://fullcalendar.io/docs -->
+
+  <!-- Reservation Form Section -->
+  <section id="make-reservation" class="mt-5">
+    <!-- Bootstrap 5.3 Container Documentation: https://getbootstrap.com/docs/5.3/layout/containers/ -->
+    <div class="container">
+      <h2 class="text-center mb-4">Make a Reservation</h2>
+      <form method="post" id="reservationForm">
+        {% csrf_token %}
+        <!-- Bootstrap 5.3 Forms Documentation: https://getbootstrap.com/docs/5.3/forms/overview/ -->
+        <form id="reservationForm">
+          <!-- Bootstrap 5.3 Form Control Documentation: https://getbootstrap.com/docs/5.3/forms/form-control/ -->
+          <div class="mb-3">
+            <label for="customerName" class="form-label">Name</label>
+            <input type="text" class="form-control" id="customerName" required>
+          </div>
+          <div class="mb-3">
+            <label for="customerEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="customerEmail" required>
+          </div>
+          <div class="mb-3">
+            <label for="reservationDate" class="form-label">Date</label>
+            <input type="date" class="form-control" id="reservationDate" required>
+          </div>
+          <div class="mb-3">
+            <label for="timeSlot" class="form-label">Time Slot</label>
+            <!-- Bootstrap 5.3 Form Select Documentation: https://getbootstrap.com/docs/5.3/forms/select/ -->
+            <select class="form-select" id="timeSlot" required>
+              <option selected>Choose...</option>
+              <option value="Morning">Morning</option>
+              <option value="Afternoon">Afternoon</option>
+              <option value="Evening">Evening</option>
+            </select>
+          </div>
+          <!-- Bootstrap 5.3 Buttons Documentation: https://getbootstrap.com/docs/5.3/components/buttons/ -->
+          <button type="submit" class="btn btn-primary">Submit Reservation</button>
+        </form>
+    </div>
+  </section>
+  <!-- End Reservation Form Section -->
+
+  <!--Form Submission-->
+  <script>
+    // Function to get CSRF token from cookie
     function getCookie(name) {
-        let cookieValue = null;
-        if (document.cookie && document.cookie !== '') {
-            const cookies = document.cookie.split(';');
-            for (let i = 0; i < cookies.length; i++) {
-                const cookie = cookies[i].trim();
-                if (cookie.substring(0, name.length + 1) === (name + '=')) {
-                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-                    break;
-                }
-            }
+      let cookieValue = null;
+      if (document.cookie && document.cookie !== '') {
+        const cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+          const cookie = cookies[i].trim();
+          if (cookie.substring(0, name.length + 1) === (name + '=')) {
+            cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+            break;
+          }
         }
-        return cookieValue;
+      }
+      return cookieValue;
     }
 
-        // Note: The event listener is for handling form submission.
-        // Event Listener documentation: https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
-        document.getElementById("reservationForm").addEventListener("submit", function(e) {
-            e.preventDefault(); // Prevent the default form submission behavior(not reloading the page). documentation:.https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault
-            var formData = {
-            ice_customer_name: document.getElementById("customerName").value,  
-            ice_customer_email: document.getElementById("customerEmail").value,
-            date: document.getElementById("reservationDate").value, 
-            ice_time_slot: document.getElementById("timeSlot").value, 
-            is_cancelable: true, // Seems redundant I must verify backend integration
-          };
-          // Fetch API for making network requests.
-            // Fetch API documentation: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
-            // For handling JSON and forms with Bootstrap: https://getbootstrap.com/docs/5.3/forms/form-control/
-            fetch('/reservation/submit_ice_reservation/', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              'X-CSRFToken': getCookie('csrftoken'), // This line is crucial https://owasp.org/www-community/attacks/csrf
-            },
-                body: JSON.stringify(formData),
-            })
-            .then(response => response.json())
-            .then(data => {
-                console.log('Success:', data);
-                alert("Reservation submitted successfully!");
-                document.getElementById("reservationForm").reset(); // Optional: Reset form fields after successful submission
-            })
-            .catch((error) => {
-                console.error('Error:', error);
-                alert("Error submitting reservation. Please try again.");
-            });
+    // Note: The event listener is for handling form submission.
+    // Event Listener documentation: https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+    document.getElementById("reservationForm").addEventListener("submit", function (e) {
+      e.preventDefault(); // Prevent the default form submission behavior(not reloading the page). documentation:.https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault
+      var formData = {
+        ice_customer_name: document.getElementById("customerName").value,
+        ice_customer_email: document.getElementById("customerEmail").value,
+        date: document.getElementById("reservationDate").value,
+        ice_time_slot: document.getElementById("timeSlot").value,
+        is_cancelable: true, // Seems redundant I must verify backend integration
+      };
+      // Fetch API for making network requests.
+      // Fetch API documentation: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+      // For handling JSON and forms with Bootstrap: https://getbootstrap.com/docs/5.3/forms/form-control/
+      fetch('/reservation/submit_ice_reservation/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-CSRFToken': getCookie('csrftoken'), // This line is crucial https://owasp.org/www-community/attacks/csrf
+        },
+        body: JSON.stringify(formData),
+      })
+        .then(response => response.json())
+        .then(data => {
+          console.log('Success:', data);
+          alert("Reservation submitted successfully!");
+          document.getElementById("reservationForm").reset(); // Optional: Reset form fields after successful submission
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+          alert("Error submitting reservation. Please try again.");
         });
-    </script>
-    
-    <!-- FullCalendar Integration -->
-    <script>
-        //  This script initializes the FullCalendar.
-        // FullCalendar Documentation: https://fullcalendar.io/docs
-        // https://stackoverflow.com/questions/67322186/fullcalendar-not-showing-google-calendar-data
-        document.addEventListener('DOMContentLoaded', function() {
-            var calendarEl = document.getElementById('calendar');
-            var calendar = new FullCalendar.Calendar(calendarEl, {
-                initialView: 'dayGridMonth',
-                events: '/reservations/availability/', // URL to fetch events
-            });
-            calendar.render();
-        });
-    </script>
- 
+    });
+  </script>
+
+  <!-- FullCalendar Integration -->
+  <script>
+    //  This script initializes the FullCalendar.
+    // FullCalendar Documentation: https://fullcalendar.io/docs
+    // https://stackoverflow.com/questions/67322186/fullcalendar-not-showing-google-calendar-data
+    document.addEventListener('DOMContentLoaded', function () {
+      var calendarEl = document.getElementById('calendar');
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth',
+        events: '/reservations/availability/', // URL to fetch events
+      });
+      calendar.render();
+    });
+  </script>
 
 
-      <!-- Footer -->
-      <footer class="footer text-center">
-        <p>&copy; 2024 Mo Ice Cream . All rights reserved.</p>
-      </footer>
-  
-      <!-- Bootstrap and Font Awesome and JS FullCalendar JS-->
-      <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.0.0/fullcalendar.min.js'></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  
-    </body>
-    </html>
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <p>&copy; 2024 Mo Ice Cream . All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap and Font Awesome and JS FullCalendar JS-->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.0.0/fullcalendar.min.js'></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
