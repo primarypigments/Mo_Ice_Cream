@@ -64,24 +64,33 @@
           </div>
           <div class="mb-3">
             <label for="customerEmail" class="form-label">Email</label>
-            <input type="email" class="form-control" id="customerEmail" required>
-          </div>
-          <div class="mb-3">
+            <input type="email" class="form-control" id="customerEmail" name="ice_customer_email" required>
+        </div>
+        <div class="mb-3">
             <label for="reservationDate" class="form-label">Date</label>
-            <input type="date" class="form-control" id="reservationDate" required>
-          </div>
-          <div class="mb-3">
+            <input type="date" class="form-control" id="reservationDate" name="date" required>
+        </div>
+        <div class="mb-3">
+          <!-- Bootstrap 5.3 Form Select Documentation: https://getbootstrap.com/docs/5.3/forms/select/ -->
             <label for="timeSlot" class="form-label">Time Slot</label>
-            <!-- Bootstrap 5.3 Form Select Documentation: https://getbootstrap.com/docs/5.3/forms/select/ -->
-            <select class="form-select" id="timeSlot" required>
-              <option selected>Choose...</option>
+            <select class="form-select" id="timeSlot" name="ice_time_slot" required>
               <option value="Morning">Morning</option>
               <option value="Afternoon">Afternoon</option>
               <option value="Evening">Evening</option>
             </select>
-          </div>
-          <!-- Bootstrap 5.3 Buttons Documentation: https://getbootstrap.com/docs/5.3/components/buttons/ -->
-          <button type="submit" class="btn btn-primary">Submit Reservation</button>
+        </div>
+        <div class="mb-3">
+            <label for="iceLocation" class="form-label">Location</label>
+            <select class="form-select" id="iceLocation" name="ice_location" required>
+              <option value="Kakenstorf">Kakenstorf</option>
+              <option value="Regesbostel">Regesbostel</option>
+              <option value="Brackel">Brackel</option>
+              <option value="Wistedt">Wistedt</option>
+              <option value="Eyendorf">Eyendorf</option>
+            </select>
+        </div>
+        <!-- Bootstrap 5.3 Buttons Documentation: https://getbootstrap.com/docs/5.3/components/buttons/ -->
+        <button type="submit" class="btn btn-primary">Submit Reservation</button>
         </form>
     </div>
   </section>
@@ -111,6 +120,7 @@
       e.preventDefault(); // Prevent the default form submission behavior(not reloading the page). documentation:.https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault
       var formData = {
         ice_customer_name: document.getElementById("customerName").value,
+        ice_location: document.getElementById("iceLocation").value,
         ice_customer_email: document.getElementById("customerEmail").value,
         date: document.getElementById("reservationDate").value,
         ice_time_slot: document.getElementById("timeSlot").value,
