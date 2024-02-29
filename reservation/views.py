@@ -6,6 +6,7 @@ from .models import Reservation
 from django.urls import reverse_lazy
 from django.http import JsonResponse
 import datetime
+from django.core.exceptions import ValidationError
 from django import forms
 from .forms import ReservationForm 
 from .models import Reservation, IceReservationStatus
