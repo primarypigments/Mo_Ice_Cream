@@ -30,7 +30,12 @@ SECRET_KEY = '8000-primarypigme-moicecream-4qqhqi6wgt0.ws-eu108.gitpod.io'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8080-primarypigme-moicecream-4qqhqi6wgt0.ws-eu108.gitpod.io']
+ALLOWED_HOSTS = ['8000-primarypigme-moicecream-4qqhqi6wgt0.ws-eu108.gitpod.io']
+
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://*.gitpod.io',
+]
 
 
 # Application definition
@@ -42,10 +47,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
     'reservation',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -54,6 +61,10 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+
+CORS_ALLOW_ALL_ORIGINS = True
+
 
 ROOT_URLCONF = 'ice_project.urls'
 
