@@ -5,9 +5,7 @@ from .models import Reservation
 from django.urls import reverse_lazy
 from django.http import JsonResponse
 import datetime
-from django.core.exceptions import ValidationError
-from django.views.decorators.csrf import csrf_exempt
-
+import logging
 
 # Landing page view for testing and debugging
 def ice_reservation_home(request):
