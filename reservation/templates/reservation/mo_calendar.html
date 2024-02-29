@@ -75,6 +75,22 @@
     
     <!--Form Submission-->
     <script>
+          // Function to get CSRF token from cookie
+    function getCookie(name) {
+        let cookieValue = null;
+        if (document.cookie && document.cookie !== '') {
+            const cookies = document.cookie.split(';');
+            for (let i = 0; i < cookies.length; i++) {
+                const cookie = cookies[i].trim();
+                if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+    }
+
         // Note: The event listener is for handling form submission.
         // Event Listener documentation: https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
         document.getElementById("reservationForm").addEventListener("submit", function(e) {
@@ -86,15 +102,15 @@
             ice_time_slot: document.getElementById("timeSlot").value, 
             is_cancelable: true, // Seems redundant I must verify backend integration
           };
-            // Fetch API for making network requests.
+          // Fetch API for making network requests.
             // Fetch API documentation: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
             // For handling JSON and forms with Bootstrap: https://getbootstrap.com/docs/5.3/forms/form-control/
             fetch('/reservation/submit_ice_reservation/', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    // I need to include CSRF token at a later time
-                },
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'X-CSRFToken': getCookie('csrftoken'), // This line is crucial https://owasp.org/www-community/attacks/csrf
+            },
                 body: JSON.stringify(formData),
             })
             .then(response => response.json())
