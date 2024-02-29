@@ -2,7 +2,6 @@ from django.contrib.auth import get_user_model
 import json
 from django.shortcuts import render
 from django.views.generic.edit import CreateView
-from .models import Reservation
 from django.urls import reverse_lazy
 from django.http import JsonResponse
 import datetime
@@ -16,15 +15,16 @@ from django.db import IntegrityError, transaction
 
 logger = logging.getLogger(__name__)
 
+
+# Landing page view for testing and debugging
 def ice_reservation_home(request):
     return render(request, 'reservation/mo_calendar.html')
 
+
 class IceReservationCreateView(CreateView):
     """
-    A view for creating a new `Reservation` instance.
-
-    Utilizes Django's generic CreateView to provide a form for creating a new reservation
-    related to ice booking. On successful form submission, redirects to a success URL.
+     A view for creating a new `Reservation` instance related to ice booking.
+    On successful form submission, redirects to a success URL.
         
     """
   
