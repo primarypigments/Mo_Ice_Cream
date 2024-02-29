@@ -27,22 +27,26 @@ class IceReservationCreateView(CreateView):
 
 
 def available_ice_slots(request):
-    # Assuming you want to fetch reservations for a specific range
-    start_date = datetime.date.today()
-    end_date = start_date + datetime.timedelta(days=30)  # Adjust the range as needed
+    # Accepting a date parameter from the request
+    date_str = request.GET.get('date', None)
+    if date_str is None:
+        return JsonResponse({'status': 'error', 'message': 'Date parameter is required.'}, status=400)
 
-    # Fetching reservations within the specified date range
-    reservations = Reservation.objects.filter(date__range=(start_date, end_date))
+    try:
+        # I need to verify if Fullcalendar sends in ISO 8601 format;
+        reservation_date = datetime.datetime.fromisoformat(date_str).date()
+    except ValueError:
+        return JsonResponse({'status': 'error', 'message': 'Invalid date format.'}, status=400)
 
-    # Formatting the reservations data for FullCalendar
-    events = [
-        {
-            "title": "Unavailable",  # Or any title you want to show on the calendar
-            "start": reservation.time_slot.isoformat(),
-            "end": (reservation.time_slot + datetime.timedelta(hours=1)).isoformat(),  # Adjust according to your needs
-        }
-        for reservation in reservations
-    ]
+    # Fetching reservations for the specific date
+    reservations = Reservation.objects.filter(date=reservation_date)
+
+    # Formatting the reservations data for use
+    events = [{
+        "title": reservation.ice_customer,
+        "start": reservation.ice_time_slot.isoformat(),
+        "end": (reservation.ice_time_slot + datetime.timedelta(hours=4)).isoformat(),
+    } for reservation in reservations]
 
     return JsonResponse(events, safe=False)
 
