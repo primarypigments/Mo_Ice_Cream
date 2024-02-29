@@ -80,12 +80,12 @@
         document.getElementById("reservationForm").addEventListener("submit", function(e) {
             e.preventDefault(); // Prevent the default form submission behavior(not reloading the page). documentation:.https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault
             var formData = {
-                name: document.getElementById("customerName").value,
-                email: document.getElementById("customerEmail").value,
-                date: document.getElementById("reservationDate").value,
-                timeSlot: document.getElementById("timeSlot").value,
-            };
-    
+            ice_customer_name: document.getElementById("customerName").value,  
+            ice_customer_email: document.getElementById("customerEmail").value,
+            date: document.getElementById("reservationDate").value, 
+            ice_time_slot: document.getElementById("timeSlot").value, 
+            is_cancelable: true, // Seems redundant I must verify backend integration
+          };
             // Fetch API for making network requests.
             // Fetch API documentation: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
             // For handling JSON and forms with Bootstrap: https://getbootstrap.com/docs/5.3/forms/form-control/
