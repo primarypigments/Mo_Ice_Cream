@@ -1,3 +1,4 @@
+from django.contrib.auth import get_user_model
 import json
 from django.shortcuts import render
 from django.views.generic.edit import CreateView
@@ -6,6 +7,8 @@ from django.urls import reverse_lazy
 from django.http import JsonResponse
 import datetime
 import logging
+from django.db import IntegrityError, transaction
+
 
 logger = logging.getLogger(__name__)
 
