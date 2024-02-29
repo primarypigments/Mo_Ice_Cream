@@ -7,7 +7,8 @@ from django.http import JsonResponse
 import datetime
 import logging
 
-# Landing page view for testing and debugging
+logger = logging.getLogger(__name__)
+
 def ice_reservation_home(request):
     return render(request, 'reservation/mo_calendar.html')
 
