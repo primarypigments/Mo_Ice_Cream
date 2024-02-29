@@ -53,6 +53,7 @@ def submit_ice_reservation(request):
     if request.method == 'POST':
         try:
             data = json.loads(request.body)
+            data.pop('ice_status', None)  # Ensure 'ice_status' is not in the request body
             form = ReservationForm(data)
             if form.is_valid():
                 try:
