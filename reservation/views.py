@@ -53,21 +53,26 @@ def submit_ice_reservation(request):
     if request.method == 'POST':
         try:
             data = json.loads(request.body)
-            # i will need to  add validate data later
-            reservation = Reservation(
-                ice_customer_name=data['name'],
-                ice_customer_email=data['email'],
-                date=data['date'],
-                ice_time_slot=data['timeSlot'],
-                is_cancelable=True,
-                
-            )
-            reservation.full_clean()  # Django's built-in model validation link ----  https://docs.djangoproject.com/en/5.0/ref/models/instances/
-            reservation.save()
-            return JsonResponse({'ice_status': 'success', 'message': 'Reservation submitted successfully.'}, status=200)
-        except ValidationError as e:
-            return JsonResponse({'status': 'error', 'message': e.messages}, status=400)
+            form = ReservationForm(data)
+            if form.is_valid():
+                try:
+                    with transaction.atomic():
+                        reservation_instance = form.save(commit=False)
+                        reservation_instance.ice_status = default_status
+                        reservation_instance.save()
+                        return JsonResponse({'status': 'success', 'message': 'Reservation submitted successfully.'}, status=200)
+                except IntegrityError as e:
+                    logger.error(f"Database integrity error when saving reservation: {e}")
+                    return JsonResponse({'status': 'error', 'message': 'Internal server error: Database operation failed.'}, status=500)
+            else:
+                logger.error(f"Form validation error: {form.errors.as_json()}")
+                return JsonResponse({'status': 'error', 'message': form.errors.as_json()}, status=400)
+        except json.JSONDecodeError as e:
+            logger.error(f"JSON decode error in request body: {e}")
+            return JsonResponse({'status': 'error', 'message': 'Invalid JSON format.'}, status=400)
         except Exception as e:
-            return JsonResponse({'ice_status': 'error', 'message': str(e)}, status=500)
+            logger.error(f"Unexpected error: {e}")
+            return JsonResponse({'status': 'error', 'message': 'Internal server error.'}, status=500)
     else:
-        return JsonResponse({'ice_status': 'error', 'message': 'Invalid request'}, status=400)
+        logger.warn("Attempted non-POST request to submit_ice_reservation.")
+        return JsonResponse({'status': 'error', 'message': 'Invalid request method.'}, status=400)
