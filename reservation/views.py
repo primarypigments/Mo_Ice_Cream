@@ -57,6 +57,15 @@ def submit_ice_reservation(request):
         logger.warn("Attempted non-POST request to submit_ice_reservation.")
         return JsonResponse({'status': 'error', 'message': 'Invalid request method. Only POST requests are accepted.'}, status=400)
 
+    try:
+        data = json.loads(request.body)
+        logger.debug(f"Received data for reservation submission: {data}")
+    except json.JSONDecodeError as e:
+        logger.error(f"JSON decode error in request body: {e}")
+        return JsonResponse({'status': 'error', 'message': 'Invalid JSON format.'}, status=400)
+
+    data.pop('ice_status', None)  # Ensure 'ice_status' is not in the request body
+
     user_email = data.get('ice_customer_email')
     if not user_email:
         logger.error(f"User email not provided in the request data: {data}")
