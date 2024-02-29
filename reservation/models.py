@@ -11,7 +11,7 @@ class IceReservationStatus(models.Model):
     description_ice = models.TextField()
 
     def __str__(self):
-        return self.status
+        return self.ice_status
 
 class Reservation(models.Model): 
     """
