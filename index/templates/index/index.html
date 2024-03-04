@@ -1,129 +1,70 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Mo Ice Cream</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/ice.css">
-  </head>
-  <body>
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
 
-    <!-- Navigation Bar -->
-    <nav class="navbar_ice navbar-expand-lg navbar-light bg-light fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Mo Ice Cream</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<!-- Services Section -->
+<section id="services" class="services">
+	<div class="container text-center">
+		<h2 class="section-title">Our Services</h2>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="service-ice" data-bs-toggle="modal" data-bs-target="#modalMenu">
+					<img src="assets/images/ice_truck.jpg" alt="Ice Cream Cones" class="img-fluid service-image">
+					<h3 class="service-ice-title">Ice Cream Cones</h3>
+					<p class="service-description">Delicious ice cream cones with a variety of flavors to choose
+						from.</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="service-ice">
+					<img src="assets/images/ice_truck.jpg" alt="Event Catering" class="img-fluid service-image">
+					<h3 class="service-ice-title">Event Catering</h3>
+					<p class="service-description">We cater events of all sizes, bringing joy to your celebrations.
+					</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="service-ice">
+					<img src="assets/images/ice_truck.jpg" alt="Mobile Ice Cream Truck" class="img-fluid service-image">
+					<h3 class="service-ice-title">Mobile Ice Cream Truck</h3>
+					<p class="service-description">Our mobile truck is ready to serve delicious treats at your
+						location.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
-    <!-- Hero Section -->
-    <section class="hero_ice" style="background-image: url('assets/images/hero.jpg'); background-size: cover; background-position: center;">
-      <div class="container text-center text-light">
-        
-      </div>
-    </section>
-
-    <!-- About Us Section TEST -->
-    <section id="about_ice" class="about_ice">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h2 class="section-title text-uppercase">About Us</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt justo ac orci interdum, at sodales sapien interdum.</p>
-          </div>
-          <div class="col-lg-6">
-            <img src="assets/images/ice_truck.jpg" alt="Ice Cream Cones" class="img-fluid service-image">
-         </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Services Section -->
-  <section id="services" class="services">
-    <div class="container text-center">
-      <h2 class="section-title">Our Services</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="service-ice" data-bs-toggle="modal" data-bs-target="#modalMenu">
-            <img src="assets/images/ice_truck.jpg" alt="Ice Cream Cones" class="img-fluid service-image">
-            <h3 class="service-ice-title">Ice Cream Cones</h3>
-            <p class="service-description">Delicious ice cream cones with a variety of flavors to choose from.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-ice">
-            <img src="assets/images/ice_truck.jpg" alt="Event Catering" class="img-fluid service-image">
-            <h3 class="service-ice-title">Event Catering</h3>
-            <p class="service-description">We cater events of all sizes, bringing joy to your celebrations.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="service-ice">
-            <img src="assets/images/ice_truck.jpg" alt="Mobile Ice Cream Truck" class="img-fluid service-image">
-            <h3 class="service-ice-title">Mobile Ice Cream Truck</h3>
-            <p class="service-description">Our mobile truck is ready to serve delicious treats at your location.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Modal -->
-  <div class="modal fade" id="modalMenu" tabindex="-1" aria-labelledby="modalMenuLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="modalMenuLabel">Ice Cream Menu</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="{% static 'images/mississippi_mud.jpg' %}" alt="Mississippi Mud" class="img-fluid">
-                        <p class="text-center">Mississippi Mud</p>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="{% static 'images/mexican_vanilla.jpg' %}" alt="Mexican Vanilla" class="img-fluid">
-                        <p class="text-center">Mexican Vanilla</p>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="{% static 'fresh_picked_strawberries.jpg' %}" alt="Fresh Picked Strawberries"
-                            class="img-fluid">
-                        <p class="text-center">Fresh Picked Strawberries</p>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
+<!-- Modal -->
+<div class="modal fade" id="modalMenu" tabindex="-1" aria-labelledby="modalMenuLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalMenuLabel">Ice Cream Menu</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-4">
+						<img src="{% static 'images/mississippi_mud.jpg' %}" alt="Mississippi Mud" class="img-fluid">
+						<p class="text-center">Mississippi Mud</p>
+					</div>
+					<div class="col-md-4">
+						<img src="{% static 'images/mexican_vanilla.jpg' %}" alt="Mexican Vanilla" class="img-fluid">
+						<p class="text-center">Mexican Vanilla</p>
+					</div>
+					<div class="col-md-4">
+						<img src="{% static 'fresh_picked_strawberries.jpg' %}" alt="Fresh Picked Strawberries"
+							class="img-fluid">
+						<p class="text-center">Fresh Picked Strawberries</p>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
 </div>
 
-    <!-- Footer -->
-    <footer class="footer text-center">
-      <p>&copy; 2024 Mo Ice Cream . All rights reserved.</p>
-    </footer>
-
-    <!-- Bootstrap and Font Awesome JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-  </body>
-  </html>
+{% endblock %}
