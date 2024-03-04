@@ -3,6 +3,9 @@ from django.contrib.auth.models import User
 
 
 class Reservation(models.Model):
+    """
+    Custom model to have users book a reservation at Mo Ice Cream
+    """
     customer = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name='reservations')
     phone_number = models.CharField(max_length=30, null=False, blank=False)
@@ -16,7 +19,6 @@ class Reservation(models.Model):
         ('Kakenstorf', 'Kakenstorf'),
         ('Regesbostel', 'Regesbostel'),
         ('Brackel', 'Brackel'),
-        ('Regesbostel', 'Brackel'),
         ('Wistedt', 'Wistedt'),
         ('Eyendorf', 'Eyendorf'),
     ], null=False, blank=False)
@@ -28,4 +30,4 @@ class Reservation(models.Model):
     book_date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return self.date
+        return self.date.strftime("%B %d, %Y")
