@@ -2,15 +2,16 @@
 {% load static %}
 {% block content %}
 
+
 <!-- Reservation Form Section -->
 <section id="make-reservation" class="mt-5">
 
   <div class="container">
-    <h2 class="text-center mb-4">Make a Reservation</h2>
+    <h2 class="text-center mb-4">Edit a Reservation</h2>
     <form method="post" id="reservationForm">
       {% csrf_token %}
       {{ form.as_p }}
-        <button type="submit" class="btn btn-primary">Submit Reservation</button>
+        <button type="submit" class="btn btn-primary">Edit Reservation</button>
       </form>
   </div>
 </section>
