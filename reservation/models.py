@@ -11,6 +11,7 @@ class Reservation(models.Model):
         User, on_delete=models.CASCADE, related_name='reservations')
     phone_number = models.CharField(
     max_length=17, validators=[
+        validate_phone_number], null=False, blank=False)
     time_slot = models.CharField(max_length=10, choices=[
         ('Morning', 'Morning'),
         ('Afternoon', 'Afternoon'),
