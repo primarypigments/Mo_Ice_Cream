@@ -13,4 +13,6 @@ class ReservationForm(forms.ModelForm):
             "date": DateInput(),
         }
         fields = ("phone_number", "date", "time_slot", "location")
-           
+
+
+class CancelReservationForm(forms.Form):
