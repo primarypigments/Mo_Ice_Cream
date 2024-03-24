@@ -52,6 +52,38 @@
 
         </div>
 
+        <!-- buttons -->
+        <div class="row my-3">
+          <div class="col">
+            <!-- set "today" using Django's "now" builtin tag -->
+            {% now "Ymd" as today %}
+            <!-- set new variable "reservation_date" using the reservation.date in Ymd format -->
+            {% with reservation_date=reservation.date|date:"Ymd" %}
+              <!-- if not canceled already -->
+              {% if reservation.status != "Canceled" %}
+                <!-- ignore bookings today or in past -->
+                {% if reservation_date|add:"0" <= today|add:"0" %}
+                  <span class="bg-dark py-1 px-3 text-light rounded">Unable to be modified</span>
+                {% else %}
+                  <!-- booking is in future (tomorrow, or later) -->
+                  {% if reservation.status != "Confirmed" %}
+                    <!-- booking isn't confirmed yet - can be edited -->
+                    <a href="{% url 'edit_reservation' reservation.id %}" class="btn btn-success btn-sm">Edit</a>
+                  {% endif %}
+                  <!-- booking is already confirmed, cannot be edited, but can be canceled -->
+                  <a href="{% url 'cancel_reservation' reservation.id %}" class="btn btn-danger btn-sm">Cancel</a>
+                {% endif %}
+              {% else %}
+                <!-- reservation has already been canceled, allow permanent deletion -->
+                <a href="{% url 'delete_reservation' reservation.id %}" class="btn btn-danger btn-sm">Delete</a>
+              {% endif %}
+            <!-- end of temporary variable "reservation_date" -->
+            {% endwith %}
+          </div>
+
+        </div>
+      </div>
+    </div>
     {% empty %}
       <div class="row text-center">
         <div class="col">
