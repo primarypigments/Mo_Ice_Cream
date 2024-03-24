@@ -196,3 +196,61 @@ button[type="submit"]:hover {
 
 }
 
+/* Tablet styles */
+@media screen and (min-width: 768px) {
+  body {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .hero_ice h1 {
+    font-size: 4rem; 
+  }
+
+  .hero_ice p, .service-description {
+    font-size: 1.6rem; 
+  .service-ice {
+    padding: 40px; 
+  }
+
+  .section-title {
+    font-size: 3rem; 
+  }
+}
+}
+/* Desktop styles */
+@media screen and (min-width: 992px) {
+  body {
+    margin-left: 6em;
+    margin-right: 6em; 
+  }
+
+  .hero_ice {
+    padding: 120px 0; 
+  }
+
+  .hero_ice h1 {
+    font-size: 5rem; 
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1.2rem; 
+  }
+
+  .service-ice {
+    padding: 50px; 
+    margin-bottom: 2em; 
+  }
+
+  .service-ice-title {
+    font-size: 1.8rem; 
+  }
+
+  .service-image {
+    max-height: 300px; 
+  }
+
+  .btn {
+    font-size: 1.2rem; 
+  }
+}
