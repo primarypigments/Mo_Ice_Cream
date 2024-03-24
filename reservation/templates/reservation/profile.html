@@ -10,16 +10,26 @@
     <h2 class="text-center mb-4">{{ request.user }}'s Profile</h2>
     
     {% for reservation in reservations %}
-      <div class="row">
-        <div class="col">Date: {{ reservation.date }}</div>
-        <div class="col">Time: {{ reservation.time_slot }}</div>
-        <div class="col">Location: {{ reservation.location }}</div>
-        <div class="col">Status: {{ reservation.status }}</div>
-        <div class="col">
-          <a href="{% url 'edit_reservation' reservation.id %}" class="btn btn-success">Edit</a>
-          <a href="{% url 'delete_reservation' reservation.id %}" class="btn btn-danger">Delete</a>
-        </div>
-      </div>
+    <div class="row {% cycle 'bg-secondary' 'bg-secondary bg-gradient bg-opacity-50' %}">
+      <div class="col">
+        <!-- column headers -->
+        <div class="row mt-5">
+          <!-- date -->
+          <div class="col">
+            Date:
+            <i class="fa-solid fa-calendar-days"></i> {{ reservation.date }}
+          </div>
+
+          <!-- time -->
+          <div class="col">
+            Time: <i class="fa-solid fa-clock"></i> {{ reservation.time_slot }}
+          </div>
+
+          <!-- location -->
+          <div class="col">
+            Location: <i class="fa-solid fa-location-dot"></i> {{ reservation.location }}
+          </div>
+
     {% empty %}
       <div class="row text-center">
         <div class="col">
