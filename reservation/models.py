@@ -9,8 +9,7 @@ class Reservation(models.Model):
     """
     customer = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name='reservations')
-    phone_number = models.CharField(max_length=30, null=False, blank=False)
-    date = models.DateField(null=False, blank=False)
+    phone_number = models.CharField(
     time_slot = models.CharField(max_length=10, choices=[
         ('Morning', 'Morning'),
         ('Afternoon', 'Afternoon'),
