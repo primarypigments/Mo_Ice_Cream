@@ -13,3 +13,6 @@ def validate_future_date(value):
 def validate_phone_number(value):
     phone_number_validate = r'^\+?(49)?0?\d{9,17}$'
     if not re.match(phone_number_validate, value):
+        raise ValidationError(
+            "Phone number must be entered in the format "
+            "'+111111111'. Maximum 17 digits.")
