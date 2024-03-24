@@ -69,10 +69,13 @@ def delete_reservation(request, id):
         messages.error(request, "Access denied, this is not your reservation")
         return redirect(reverse("index"))
 
-    # logged-in user owns this reservation and can proceed
-    reservation.delete()
-    messages.success(request, "Reservation deleted!")
-    return redirect(reverse("profile"))
+    if request.method == 'POST':
+        reservation.delete()
+        messages.success(request, "Reservation deleted!")
+        return redirect(reverse("profile"))
+
+    return render(request, 'reservation/delete_reservation_confirm.html', {'reservation': reservation})
+
 
 
 @login_required
