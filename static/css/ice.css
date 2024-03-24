@@ -142,11 +142,6 @@ footer a {
 }
 /* Button styles */
 .btn {
-  display: inline-block;
-  padding: 15px 30px;
-  margin-top: 20px;
-  text-align: center;
-  text-decoration: none;
   background-color: #e96a3f; 
   color: #fff;
   border-radius: 5px;
@@ -179,5 +174,25 @@ footer a {
 .form-field input:focus, .form-field textarea:focus, .form-field select:focus {
   border-color: #e96a3f;
   outline: none; 
+}
+
+/* Custom button styling */
+button[type="submit"] {
+  background-color: #e96a3f; 
+  color: white; 
+  padding: 10px 15px; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer;
+  font-size: 1rem; 
+}
+
+button[type="submit"]:hover {
+  background-color: #e96a3f;
+}
+
+.alert { 
+  margin: o 1.5em ;
+
 }
 
