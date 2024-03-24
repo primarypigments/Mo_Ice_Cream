@@ -4,3 +4,4 @@ import re
 
 
 def validate_future_date(value):
+    today_date = timezone.localdate()  # Get today's date
