@@ -16,11 +16,15 @@ def reservation_page(request):
     form = ReservationForm(request.POST or None)
     if request.method == "POST":
         if form.is_valid():
-            form.instance.customer = request.user
-            form.save()
-            messages.success(request, "Thanks for your reservation!")
-            return redirect(reverse("profile"))
-        messages.error(request, "Error: Please try again.")
+            try:
+                form.instance.customer = request.user
+                form.save()
+                messages.success(request, "Thanks for your reservation!")
+                return redirect(reverse("profile"))
+            except IntegrityError:
+                messages.error(request, "This reservation slot is already booked. Please try another date, time, or location.")
+        else:
+            messages.error(request, "This reservation slot is already booked. Please try another date, time, or location.")
 
     template = "reservation/mo_calendar.html"
     context = {
