@@ -10,6 +10,7 @@ class Reservation(models.Model):
     customer = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name='reservations')
     phone_number = models.CharField(
+    max_length=17, validators=[
     time_slot = models.CharField(max_length=10, choices=[
         ('Morning', 'Morning'),
         ('Afternoon', 'Afternoon'),
