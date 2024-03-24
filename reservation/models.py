@@ -33,5 +33,8 @@ class Reservation(models.Model):
     ], default="Pending")
     book_date = models.DateTimeField(auto_now_add=True)
 
+    class Meta:
+        unique_together = ('date', 'time_slot', 'location')
+#https://docs.djangoproject.com/en/4.2/ref/models/options/#unique-together
     def __str__(self):
         return self.date.strftime("%B %d, %Y")
