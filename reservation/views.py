@@ -5,7 +5,7 @@ from django.db import IntegrityError
 from .forms import ReservationForm 
 from .models import Reservation
 import logging
-
+from .forms import CancelReservationForm
 
 logger = logging.getLogger(__name__)
 
