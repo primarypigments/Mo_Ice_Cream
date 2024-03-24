@@ -22,6 +22,13 @@
               {% endif %}
               {% if field.help_text %}
                 <small class="form-text text-muted">{{ field.help_text }}</small>
+              {% endif %}
+              {% if field.errors %}
+                {% for error in field.errors %}
+                  <div class="alert alert-danger" role="alert">{{ error }}</div>
+                {% endfor %}
+              {% endif %}
+            </div>
   </div>
 </section>
 
