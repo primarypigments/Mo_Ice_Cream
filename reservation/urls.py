@@ -19,4 +19,14 @@ urlpatterns = [
         views.profile,
         name="profile"
     ),
+    path(
+        "accounts/",
+        include(
+            "django.contrib.auth.urls")
+    ),
+    path(
+        "cancel_reservation/<int:id>/",
+        views.cancel_reservation,
+        name="cancel_reservation"),
+   
 ]
