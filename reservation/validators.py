@@ -8,3 +8,6 @@ def validate_future_date(value):
     if value < today_date:
         raise ValidationError(
             "The date selected has already passed. Please try again.")
+
+
+def validate_phone_number(value):
