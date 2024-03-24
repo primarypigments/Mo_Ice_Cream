@@ -156,3 +156,28 @@ footer a {
 .btn:hover {
   background-color: #c95631; 
 }
+/* Form Error Messages */
+.error {
+  color: red;
+  font-weight: bold; 
+  margin-top: 5px; 
+  font-size: 0.9rem;
+}
+
+.form-field {
+  margin-bottom: 20px; 
+}
+
+.form-field input, .form-field textarea, .form-field select {
+  width: 100%; 
+  padding: 8px; 
+  margin-top: 5px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+}
+
+.form-field input:focus, .form-field textarea:focus, .form-field select:focus {
+  border-color: #e96a3f;
+  outline: none; 
+}
+
