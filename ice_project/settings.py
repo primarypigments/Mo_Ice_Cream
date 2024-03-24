@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'index',
     'reservation',
+     'widget_tweaks',
 ]
 
 MIDDLEWARE = [
