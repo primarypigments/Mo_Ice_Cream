@@ -10,9 +10,8 @@
     <h2 class="text-center mb-4">Edit a Reservation</h2>
     <form method="post" id="reservationForm">
       {% csrf_token %}
-      {{ form.as_p }}
-        <button type="submit" class="btn btn-primary">Edit Reservation</button>
-      </form>
+      <div class="row">
+        {% for field in form %}
   </div>
 </section>
 
