@@ -35,6 +35,73 @@
 	</div>
 </section>
 
+<!-- Village Pop Up's Modal -->
+<div class="modal fade" id="modalCatering" tabindex="-1" aria-labelledby="modalCateringLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-lg">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="modalCateringLabel">Event Catering</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<!-- Content for Village Pop Up's -->
+				<p>Mo's Village Pop Ice Cream is a heartfelt father-son 
+					operation, offers three homemade flavors: Mexican Vanilla,
+					Mississippi Mud, and Fresh Picked Strawberries.
+					 We pride ourselves on using fresh, pure ingredients with 
+					 no additives. Our milk and cream are sourced from local 
+					 farmers within a 10km radius, ensuring a taste that's as 
+					 wholesome as our community. Join us for a scoop of 
+					 sincerity.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- How to Book Us Modal -->
+<div class="modal fade" id="modalTruck" tabindex="-1" aria-labelledby="modalTruckLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTruckLabel">Book Us</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Content for Mobile Ice Cream Truck -->
+                <div class="booking-process">
+                    <h3>How to Book Your Ice Cream Experience</h3>
+                    <ol>
+                        <li>
+                            <strong>Step 1: Register or Login</strong>
+                            <p>To start your reservation, please ensure you're <a href="{% url 'account_login' %}" class="nav-link" aria-current="page">
+                                Logged </a>in. If you don't have an account, you'll need to <a href="{% url 'account_signup' %}" class="nav-link" aria-current="page">
+                                Register
+                            </a> first.</p>
+                        </li>
+                        <li>
+                            <strong>Step 2: Make a Reservation</strong>
+                            <p>Once logged in, navigate to our 
+								<a href="{% url 'reservation_page' %}" class="nav-link" aria-current="page">
+									Make Reservation
+								</a> to select your date, location, and time.</p>
+                        </li>
+                        <li>
+                            <strong>Step 3: Enjoy Our Ice Cream</strong>
+                            <p>On your reservation date, join us to enjoy the 
+								delicious ice cream. We can't wait to serve you!</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- Modal -->
 <div class="modal fade" id="modalMenu" tabindex="-1" aria-labelledby="modalMenuLabel" aria-hidden="true">
 	<div class="modal-dialog modal-dialog-centered modal-lg">
