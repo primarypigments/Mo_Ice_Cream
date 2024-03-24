@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from .validators import validate_phone_number, validate_future_date
 
 
 class Reservation(models.Model):
