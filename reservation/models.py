@@ -12,6 +12,7 @@ class Reservation(models.Model):
     phone_number = models.CharField(
     max_length=17, validators=[
         validate_phone_number], null=False, blank=False)
+    date = models.DateField(
     time_slot = models.CharField(max_length=10, choices=[
         ('Morning', 'Morning'),
         ('Afternoon', 'Afternoon'),
