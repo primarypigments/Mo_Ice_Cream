@@ -127,10 +127,19 @@ li.nav-item {
 .footer {
   background-color: #2b2929; 
   color: #fff;
-  padding: 40px 0;
+  padding: 10px 0;
   text-align: center;
+  margin-top: 1em;
+}
+footer a {
+  margin: 0 10px;
+  color: #e96a3f; /* Icon color */
+  font-size: 24px; /* Icon size */
 }
 
+.footer a:hover {
+  color: #c95631; /* Icon hover color */
+}
 /* Button styles */
 .btn {
   display: inline-block;
