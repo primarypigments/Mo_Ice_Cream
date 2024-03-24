@@ -16,3 +16,4 @@ class ReservationForm(forms.ModelForm):
 
 
 class CancelReservationForm(forms.Form):
+    reason = forms.CharField(widget=forms.Textarea(attrs={'placeholder':
