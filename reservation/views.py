@@ -12,7 +12,13 @@ logger = logging.getLogger(__name__)
 
 @login_required
 def reservation_page(request):
-    """ Reservation page view for testing and debugging """
+    """Handles the reservation page view. This view is responsible for creating new reservations.
+    
+    The view uses the ReservationForm to collect reservation details. If the form is submitted (POST request) and
+    is valid, it attempts to save a new reservation instance. If successful, it redirects the user to their profile page.
+    If an IntegrityError (occurs the reservation slot is already booked), it displays an error message.
+    
+     """
     form = ReservationForm(request.POST or None)
     if request.method == "POST":
         if form.is_valid():
@@ -22,9 +28,9 @@ def reservation_page(request):
                 messages.success(request, "Thanks for your reservation!")
                 return redirect(reverse("profile"))
             except IntegrityError:
-                messages.error(request, "This reservation slot is already booked. Please try another date, time, or location.")
+                messages.error(request, "The selected reservation slot is unavailable. Please choose a different date, time, or location.")
         else:
-            messages.error(request, "This reservation slot is already booked. Please try another date, time, or location.")
+            messages.error(request, "The selected reservation slot is unavailable. Please choose a different date, time, or location.")
 
     template = "reservation/mo_calendar.html"
     context = {
@@ -66,7 +72,6 @@ def delete_reservation(request, id):
     reservation = get_object_or_404(Reservation, id=id)
 
     if reservation.customer != request.user:
-        # invalid user/customer
         messages.error(request, "Access denied, this is not your reservation")
         return redirect(reverse("index"))
 
