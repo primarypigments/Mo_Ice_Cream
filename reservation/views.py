@@ -96,6 +96,12 @@ def cancel_reservation(request, id):
     else:
         form = CancelReservationForm()
 
+    context = {
+        'form': form,
+        'reservation': reservation
+    }
+    return render(request, 'reservation/cancel_reservation_confirm.html', context)
+
 
 @login_required
 def profile(request):
