@@ -9,9 +9,10 @@
     <h2 class="text-center mb-4">Make a Reservation</h2>
     <form method="post" id="reservationForm">
       {% csrf_token %}
-      {{ form.as_p }}
-        <button type="submit" class="btn btn-primary">Submit Reservation</button>
-      </form>
+      <div class="row">
+        {% for field in form %}
+          <div class="col-md-3"> 
+            <div class="form-group">
   </div>
 </section>
 
