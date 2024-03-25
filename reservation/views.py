@@ -87,6 +87,12 @@ def cancel_reservation(request, id):
 
     if request.method == 'POST':
         form = CancelReservationForm(request.POST)
+        if form.is_valid():
+            reservation.status = 'Canceled'
+            reservation.save()
+            messages.success(request, "Your reservation has been canceled.")
+            # Redirect to a confirmation page or profile
+            return redirect(reverse("profile"))
 
 @login_required
 def profile(request):
