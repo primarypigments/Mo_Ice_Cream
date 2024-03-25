@@ -62,8 +62,9 @@ def edit_reservation(request, id):
 
 @login_required
 def delete_reservation(request, id):
-    """ Reservation page view for deleting a reservation """
+    """Reservation page view for deleting a reservation with confirmation."""
     reservation = get_object_or_404(Reservation, id=id)
+
     if reservation.customer != request.user:
         # invalid user/customer
         messages.error(request, "Access denied, this is not your reservation")
