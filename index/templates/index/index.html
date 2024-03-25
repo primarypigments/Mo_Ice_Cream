@@ -5,30 +5,28 @@
 <!-- Services Section -->
 <section id="services" class="services">
 	<div class="container text-center">
-		<h2 class="section-title">Our Services</h2>
+		<h2 class="section-title">About Us</h2>
 		<div class="row">
 			<div class="col-md-4">
 				<div class="service-ice" data-bs-toggle="modal" data-bs-target="#modalMenu">
-					<img src="assets/images/ice_truck.jpg" alt="Ice Cream Cones" class="img-fluid service-image">
+					<img src="{% static 'images/menu.jpg' %}" alt="Ice Cream Menu" class="img-fluid service-image">
 					<h3 class="service-ice-title">Ice Cream Cones</h3>
 					<p class="service-description">Delicious ice cream cones with a variety of flavors to choose
 						from.</p>
 				</div>
 			</div>
 			<div class="col-md-4">
-				<div class="service-ice">
-					<img src="assets/images/ice_truck.jpg" alt="Event Catering" class="img-fluid service-image">
-					<h3 class="service-ice-title">Event Catering</h3>
-					<p class="service-description">We cater events of all sizes, bringing joy to your celebrations.
-					</p>
+				<div class="service-ice" data-bs-toggle="modal" data-bs-target="#modalCatering">
+					<img src="{% static 'images/father_son.jpg' %}" alt="Services" class="img-fluid service-image">
+					<h3 class="service-ice-title">Village Pop Up's</h3>
+					<p class="service-description">We cater to villages of all sizes, bringing joy to your Villages.</p>
 				</div>
 			</div>
 			<div class="col-md-4">
-				<div class="service-ice">
-					<img src="assets/images/ice_truck.jpg" alt="Mobile Ice Cream Truck" class="img-fluid service-image">
-					<h3 class="service-ice-title">Mobile Ice Cream Truck</h3>
-					<p class="service-description">Our mobile truck is ready to serve delicious treats at your
-						location.</p>
+				<div class="service-ice" data-bs-toggle="modal" data-bs-target="#modalTruck">
+					<img src="{% static 'images/mississippi_mud.jpg' %}" alt="About Us" class="img-fluid service-image">
+					<h3 class="service-ice-title">How to Book Us</h3>
+					<p class="service-description">Easy as 1 2 3.</p>
 				</div>
 			</div>
 		</div>
