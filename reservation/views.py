@@ -81,6 +81,7 @@ def delete_reservation(request, id):
 def cancel_reservation(request, id):
     reservation = get_object_or_404(Reservation, id=id)
 
+    if reservation.customer != request.user:
 
 @login_required
 def profile(request):
