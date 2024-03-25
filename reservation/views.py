@@ -82,6 +82,7 @@ def cancel_reservation(request, id):
     reservation = get_object_or_404(Reservation, id=id)
 
     if reservation.customer != request.user:
+        messages.error(request, "Access denied, this is not your reservation")
 
 @login_required
 def profile(request):
