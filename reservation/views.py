@@ -86,6 +86,7 @@ def cancel_reservation(request, id):
         return redirect(reverse("index"))
 
     if request.method == 'POST':
+        form = CancelReservationForm(request.POST)
 
 @login_required
 def profile(request):
