@@ -83,6 +83,8 @@ def cancel_reservation(request, id):
 
     if reservation.customer != request.user:
         messages.error(request, "Access denied, this is not your reservation")
+        return redirect(reverse("index"))
+
 
 @login_required
 def profile(request):
