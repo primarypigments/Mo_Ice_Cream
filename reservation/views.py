@@ -85,6 +85,7 @@ def cancel_reservation(request, id):
         messages.error(request, "Access denied, this is not your reservation")
         return redirect(reverse("index"))
 
+    if request.method == 'POST':
 
 @login_required
 def profile(request):
