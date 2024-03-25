@@ -77,6 +77,8 @@ def delete_reservation(request, id):
     return render(request, 'reservation/delete_reservation_confirm.html', {'reservation': reservation})
 
 
+@login_required
+def cancel_reservation(request, id):
 
 @login_required
 def profile(request):
