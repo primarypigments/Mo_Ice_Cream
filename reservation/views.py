@@ -93,6 +93,9 @@ def cancel_reservation(request, id):
             messages.success(request, "Your reservation has been canceled.")
             # Redirect to a confirmation page or profile
             return redirect(reverse("profile"))
+    else:
+        form = CancelReservationForm()
+
 
 @login_required
 def profile(request):
