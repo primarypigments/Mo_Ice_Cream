@@ -41,7 +41,6 @@ def reservation_page(request):
     return render(request, template, context)
 
 
-
 @login_required
 def edit_reservation(request, id):
     """ Reservation page view for editing a reservation """
