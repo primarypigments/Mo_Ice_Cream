@@ -126,3 +126,6 @@ def contact(request):
         name = request.POST.get('name')
         email = request.POST.get('email')
         message = request.POST.get('message')
+
+        # Create and save the new ContactMessage instance
+        ContactMessage.objects.create(name=name, email=email, message=message)
