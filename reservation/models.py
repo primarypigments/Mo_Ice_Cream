@@ -44,3 +44,5 @@ class ContactMessage(models.Model):
     name = models.CharField(max_length=40)
     email = models.EmailField()
     message = models.TextField(max_length=350)
+    submitted_at = models.DateTimeField(auto_now_add=True)
+#https://docs.djangoproject.com/en/4.2/ref/models/database-functions/
