@@ -46,3 +46,6 @@ class ContactMessage(models.Model):
     message = models.TextField(max_length=350)
     submitted_at = models.DateTimeField(auto_now_add=True)
 #https://docs.djangoproject.com/en/4.2/ref/models/database-functions/
+
+    def __str__(self):
+        return f"Message from {self.name} - {self.email}"
