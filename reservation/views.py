@@ -129,3 +129,8 @@ def contact(request):
 
         # Create and save the new ContactMessage instance
         ContactMessage.objects.create(name=name, email=email, message=message)
+
+        messages.success(request, "Thank you for contacting Mo Ice Cream! We will get back to you soon.")
+        return redirect('index')  
+    # If not a POST request, just show the contact form
+    return render(request, 'reservation/contact.html', {})
