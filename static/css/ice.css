@@ -192,8 +192,7 @@ button[type="submit"]:hover {
 }
 
 .alert { 
-  margin: o 1.5em ;
-
+  margin: 0 1.5em;
 }
 
 /* Tablet styles */
