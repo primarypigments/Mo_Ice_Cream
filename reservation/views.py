@@ -6,6 +6,8 @@ from .forms import ReservationForm
 from .models import Reservation
 import logging
 from .forms import CancelReservationForm
+from .models import ContactMessage
+
 
 logger = logging.getLogger(__name__)
 
