@@ -38,3 +38,6 @@ class Reservation(models.Model):
 #https://docs.djangoproject.com/en/4.2/ref/models/options/#unique-together
     def __str__(self):
         return self.date.strftime("%B %d, %Y")
+
+
+class ContactMessage(models.Model):
