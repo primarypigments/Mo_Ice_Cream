@@ -203,19 +203,20 @@ button[type="submit"]:hover {
   }
 
   .hero_ice h1 {
-    font-size: 4rem; 
+    font-size: 4rem;
   }
 
   .hero_ice p, .service-description {
-    font-size: 1.6rem; 
+    font-size: 1.6rem;
+  } 
+
   .service-ice {
-    padding: 40px; 
-  }
+    padding: 40px;
+  } 
 
   .section-title {
-    font-size: 3rem; 
+    font-size: 3rem;
   }
-}
 }
 /* Desktop styles */
 @media screen and (min-width: 992px) {
