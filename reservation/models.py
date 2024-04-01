@@ -41,3 +41,4 @@ class Reservation(models.Model):
 
 
 class ContactMessage(models.Model):
+    name = models.CharField(max_length=40)
