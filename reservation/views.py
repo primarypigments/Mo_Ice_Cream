@@ -119,3 +119,5 @@ def profile(request):
         "reservations": reservations,
     }
     return render(request, template, context)
+
+def contact(request):
