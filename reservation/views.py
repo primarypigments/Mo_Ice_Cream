@@ -14,13 +14,15 @@ logger = logging.getLogger(__name__)
 
 @login_required
 def reservation_page(request):
-    """Handles the reservation page view. This view is responsible for creating new reservations.
-    
-    The view uses the ReservationForm to collect reservation details. If the form is submitted (POST request) and
-    is valid, it attempts to save a new reservation instance. If successful, it redirects the user to their profile page.
-    If an IntegrityError (occurs the reservation slot is already booked), it displays an error message.
-    
-     """
+    """Handles the reservation page view. This view is responsible for creating
+     new reservations.
+    The view uses the ReservationForm to collect reservation details. If the
+    form is submitted (POST request) and
+    is valid, it attempts to save a new reservation instance. If successful,
+    it redirects the user to their profile page.
+    If an IntegrityError (occurs the reservation slot is already booked),
+    it displays an error message.
+    """
     form = ReservationForm(request.POST or None)
     if request.method == "POST":
         if form.is_valid():
@@ -30,9 +32,15 @@ def reservation_page(request):
                 messages.success(request, "Thanks for your reservation!")
                 return redirect(reverse("profile"))
             except IntegrityError:
-                messages.error(request, "The selected reservation slot is unavailable. Please choose a different date, time, or location.")
+                messages.error(
+                    request, "The selected reservation slot is unavailable."
+                             "Please choose a"
+                             "different date, time, or location.")
         else:
-            messages.error(request, "The selected reservation slot is unavailable. Please choose a different date, time, or location.")
+            messages.error(request,
+                           "The selected reservation slot is unavailable."
+                           "Please choose a different"
+                           "date, time, or location.")
 
     template = "reservation/mo_calendar.html"
     context = {
@@ -129,7 +137,9 @@ def contact(request):
         # Create and save the new ContactMessage instance
         ContactMessage.objects.create(name=name, email=email, message=message)
 
-        messages.success(request, "Thank you for contacting Mo Ice Cream! We will get back to you soon.")
-        return redirect('index')  
+        messages.success(request,
+                         "Thank you for contacting Mo Ice Cream! "
+                         "We will get back to you soon.")
+        return redirect('index')
     # If not a POST request, just show the contact form
     return render(request, 'reservation/contact.html', {})
