@@ -56,6 +56,8 @@ INSTALLED_APPS = [
     'widget_tweaks',
 ]
 
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
