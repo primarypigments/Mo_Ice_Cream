@@ -89,7 +89,11 @@ def delete_reservation(request, id):
         messages.success(request, "Reservation deleted!")
         return redirect(reverse("profile"))
 
-    return render(request, 'reservation/delete_reservation_confirm.html', {'reservation': reservation})
+    return render(
+        request,
+        'reservation/delete_reservation_confirm.html',
+        {'reservation': reservation}
+    )
 
 
 @login_required
@@ -115,7 +119,8 @@ def cancel_reservation(request, id):
         'form': form,
         'reservation': reservation
     }
-    return render(request, 'reservation/cancel_reservation_confirm.html', context)
+    return render(request,
+                  'reservation/cancel_reservation_confirm.html', context)
 
 
 @login_required
