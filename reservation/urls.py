@@ -1,7 +1,6 @@
 from . import views
 from django.urls import path, include
 
-
 urlpatterns = [
     path("", views.reservation_page, name="reservation_page"),
     path(
@@ -21,18 +20,16 @@ urlpatterns = [
     ),
     path(
         "accounts/",
-        include(
-            "django.contrib.auth.urls")
+        include("django.contrib.auth.urls")
     ),
     path(
         "cancel_reservation/<int:id>/",
         views.cancel_reservation,
-        name="cancel_reservation"),
-   
-   path(
+        name="cancel_reservation"
+    ),
+    path(
         "contact/",
         views.contact,
         name="contact"
     ),
-    
 ]
