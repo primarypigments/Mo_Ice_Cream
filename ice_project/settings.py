@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'reservation',
     'crispy_forms',
     'widget_tweaks',
+    'crispy_bootstrap5',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
