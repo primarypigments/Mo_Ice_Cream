@@ -5,7 +5,6 @@
 
 <!-- Reservation Form Section -->
 
-<!-- Reservation Form Section -->
 <section id="make-reservation" class="mt-5">
   <div class="container">
     <h2 class="text-center mb-4">Edit Reservation</h2>
@@ -13,7 +12,7 @@
       {% csrf_token %}
       <div class="row">
         {% for field in form %}
-          <div class="col-md-3"> <!-- Adjust the column size as needed -->
+          <div class="col-md-3">
             <div class="form-group">
               {{ field.label_tag }}
               {% if field.name == 'phone_number' %}
