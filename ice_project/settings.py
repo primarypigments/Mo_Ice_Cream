@@ -94,6 +94,7 @@ TEMPLATES = [
         },
     },
 ]
+ACCOUNT_EMAIL_REQUIRED = True
 
 WSGI_APPLICATION = 'ice_project.wsgi.application'
 
