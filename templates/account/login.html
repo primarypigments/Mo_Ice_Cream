@@ -7,24 +7,32 @@
 
   <form class="login" method="POST" action="{% url 'account_login' %}">
     {% csrf_token %}
+    
+    {% if form.non_field_errors %}
+      <div class="alert alert-danger mb-4" role="alert">
+        {% for error in form.non_field_errors %}
+          {{ error }}
+        {% endfor %}
+      </div>
+    {% endif %}
     <div class="row justify-content-center">
       <div class="col-md-4">
         {% for field in form %}
-        {% if not forloop.first %}
-        <div class="mb-3"></div>
-        {% endif %}
-        <div class="form-group">
+        <div class="form-group mb-3"> 
           {{ field.label_tag }}
           {{ field }}
           {% if field.help_text %}
           <small class="form-text text-muted">{{ field.help_text }}</small>
           {% endif %}
-          {% for error in field.errors %}
-          <div class="alert alert-danger">{{ error }}</div>
-          {% endfor %}
+          {% if field.errors %}
+            {% for error in field.errors %}
+          
+              <div class="alert alert-danger">{{ error }}</div>
+            {% endfor %}
+          {% endif %}
         </div>
         {% endfor %}
-        <div class="d-grid gap-2">
+        <div class="d-grid gap-2 mb-3">
           <div class="row">
             <div class="col-6 mx-auto">
               <button class="btn btn-primary btn-block" type="submit">{% trans "Sign In" %}</button>
