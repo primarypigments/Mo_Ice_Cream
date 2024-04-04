@@ -140,6 +140,7 @@ def contact(request):
         message = request.POST.get('message')
 
         # Create and save the new ContactMessage instance
+        print(f"Creating contact message: {name}, {email}, {message}")
         ContactMessage.objects.create(name=name, email=email, message=message)
 
         messages.success(request,
