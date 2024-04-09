@@ -1,4 +1,3 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 # [MO ICE CREAM](https://moice-161ddda3bde4.herokuapp.com)
 
@@ -6,19 +5,9 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/primarypigments/mo_ice_cream)](https://github.com/primarypigments/mo_ice_cream/commits/main)
 [![GitHub repo size](https://img.shields.io/github/repo-size/primarypigments/mo_ice_cream)](https://github.com/primarypigments/mo_ice_cream)
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑START OF NOTES (to be deleted)
-
-!! IMPORTANT !! RE: Table of Contents
-
-DO NOT add a Table of Contents to your README or TESTING!!
-These are outdated since 2021 when GitHub added them built-in to Markdown files automatically.
-
-Assessors see this as bad practice since it's outdated for a few years now,
-as if you've taken it from someone else's project that did the same thing.
-
 ---
 
-	Mo Ice Cream brings a fresh and delightful twist to the traditional ice cream experience, directly to the heart of small villages. In a world where the simple pleasures of a local ice cream shop are often missing, Mo Ice Cream stands out by offering a unique, reservation-centered pop-up experience that promises not only to serve but to create lasting memories. With an exclusive selection of three meticulously crafted flavors, we ensure each scoop is a testament to our passion for quality and simplicity. Limited to just 150 scoops per event, we guarantee exclusivity and freshness, making each visit a special occasion.
+Mo Ice Cream brings a fresh and delightful twist to the traditional ice cream experience, directly to the heart of small villages. In a world where the simple pleasures of a local ice cream shop are often missing, Mo Ice Cream stands out by offering a unique, reservation-centered pop-up experience that promises not only to serve but to create lasting memories. With an exclusive selection of three meticulously crafted flavors, we ensure each scoop is a testament to our passion for quality and simplicity. Limited to just 150 scoops per event, we guarantee exclusivity and freshness, making each visit a special occasion.
 
 Our project is designed with a clear purpose: to bring joy and a touch of sweetness to communities that lack the luxury of an ice cream shop. By focusing on small villages, Mo Ice Cream fills a significant gap, turning the absence of an ice cream parlor into an opportunity for a shared, communal event. It’s not just about ice cream; it’s about bringing people together, fostering connections, and making the ice cream experience both personal and communal.
 
@@ -26,50 +15,6 @@ Behind Mo Ice Cream is a heartwarming father-and-son duo, embodying the spirit o
 
 Mo Ice Cream is more than just a pop-up; it's a beacon of joy, a catalyst for community gathering, and a reminder of the simple pleasures that life offers. We invite you to embrace this unique experience, where every scoop is served with love, care, and the warmth of family values. Join us in making every event a memorable one, where the joy of ice cream is shared, and every flavor tells a story of passion, quality, and community.
 
-
-Consider adding a mockup image using the "Am I Responsive" website.
-Here's your deployed site as an example:
-https://ui.dev/amiresponsive?url=https://moice-161ddda3bde4.herokuapp.com
-
-Screenshots for the README and testing should not be inside of `assets/` or `static/` image folders.
-(reminder: `assets/` and `static/` are for files used on the live site, not documentation)
-Consider adding a new folder called `documentation`, and add the amiresponsive screenshot inside of that folder.
-To add the image into your README, use this format:
-(assuming you have a new folder called `documentation` with an image called "mockup.png")
-
-![screenshot](documentation/mockup.png)
-
-Note: Markdown files (.md) should not contain HTML elements like `img`, `br`, `div`, `a`, etc, only Markdown formatting.
-Find out more about using Markdown elements here:
-https://pandao.github.io/editor.md/en.html
-
----
-
-GitHub now supports CALLOUTS in Markdown files.
-There are some callouts already embedded in this application for you.
-However, if you feel that you want to add more, there are certain ones you can use.
-
-NOTE: the preview for callouts isn't yet supported in Gitpod/Codeanywhere/VSCode/etc.
-You'll have to commit/push the changes to GitHub to see it in action.
-
-> [!NOTE]  
-> BLUE: Highlights information that users should take into account, even when skimming.
-
-> [!TIP]  
-> GREEN: Optional information to help a user be more successful.
-
-> [!IMPORTANT]  
-> PURPLE: Crucial information necessary for users to succeed.
-
-> [!WARNING]  
-> YELLOW: Critical content demanding immediate user attention due to potential risks.
-
-> [!CAUTION]  
-> RED: Negative potential consequences of an action.
-
-Source: https://github.com/orgs/community/discussions/16925
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 ![screenshot](documentation/mockup.png)
 
@@ -171,34 +116,16 @@ My choice of "Patrick Hand" for Mo Ice Cream is rooted in a desire to create a f
 
 ## Wireframes
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
-
-In this section, display your wireframe screenshots using a Markdown `table`.
-Instructions on how to do Markdown `tables` start on line #213 on this site: https://pandao.github.io/editor.md/en.html
-
-Alternatively, dropdowns are a way to condense several wireframes into a collapsible menu to save space.
-Dropdowns in Markdown are considered some of the only acceptable HTML components that are allowed for assessment purposes.
-
-⚠️ **IMPORTANT**! ⚠️ **IMPORTANT**! ⚠️ **IMPORTANT**! ⚠️
-The example below uses the `details` and `summary` code elements.
-However, for these scripts to work, I've had to add spaces within the `< >` elements.
-
-You MUST remove these spaces for it to work properly on your own README/TESTING files.
-Remove the spaces within the `< >` brackets for the `details` and `summary` code elements,
-for the Mobile, Tablet, and Desktop wireframes.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
 I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
 
 ### Mobile Wireframes
 
-< details >
-< summary > Click here to see the Mobile Wireframes < / summary >
+<details>
+<summary> Click here to see the Mobile Wireframes </summary>
 
 Home
-  - ![screenshot]documentation/wireframe/home_iphone.png)
+  - ![screenshot](documentation/wireframe/home_iphone.png)
 
 Contact
   - ![screenshot](documentation/wireframe/contact_iphone.png)
@@ -224,7 +151,7 @@ Cancel Reservation
 
 
 Delete Reservation
-  - ![screenshot]documentation/wireframe/delete_iphone.png)
+  - ![screenshot](documentation/wireframe/delete_iphone.png)
 
 
 Forgot Password
@@ -250,12 +177,12 @@ Logout
 etc.
   - repeat for any remaining mobile wireframes
 
-< / details >
+</details>
 
 ### Tablet Wireframes
 
-< details >
-< summary > Click here to see the Tablet Wireframes < / summary >
+<details>
+<summary> Click here to see the Tablet Wireframes </summary>
 
 Home
   - ![screenshot](documentation/wireframe/home_ipad.png)
@@ -286,34 +213,17 @@ Cancel Reservation
 Delete Reservation
   - ![screenshot](documentation/wireframe/delete_ipad.png)
 
-
-Forgot Password
-  - ![screenshot](documentation/wireframes/mobile-gallery.png)
-
-
-Password Reset Info
-  - ![screenshot](documentation/wireframes/mobile-gallery.png)
-
-
-Password Reset Confirm
-  - ![screenshot](documentation/wireframes/mobile-gallery.png)
-
-
-Password Reset Complete
-  - ![screenshot](documentation/wireframes/mobile-gallery.png)
-
-
 Logout
   - ![screenshot](documentation/wireframe/sign_out_ipad.png)
 
 
 
-< / details >
+</details>
 
 ### Desktop Wireframes
 
-< details >
-< summary > Click here to see the Desktop Wireframes < / summary >
+<details>
+<summary> Click here to see the Desktop Wireframes </summary>
 
 Home
   - ![screenshot](documentation/wireframe/home.png)
@@ -344,46 +254,14 @@ Cancel Reservation
 Delete Reservation
   - ![screenshot](documentation/wireframe/delete.png)
 
-
-Forgot Password
-  - ![screenshot](documentation/wireframes/mobile-gallery.png)
-
-
-Password Reset Info
-  - ![screenshot](documentation/wireframes/mobile-gallery.png)
-
-
-Password Reset Confirm
-  - ![screenshot](documentation/wireframes/mobile-gallery.png)
-
-
-Password Reset Complete
-  - ![screenshot](documentation/wireframes/mobile-gallery.png)
-
-
 Logout
   - ![screenshot](documentation/wireframe/sign_out.png)
 
 
 
-< / details >
+</details>
 
 ## Features
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
-
-In this section, you should go over the different parts of your project,
-and describe each in a sentence or so.
-
-You will need to explain what value each of the features provides for the user,
-focusing on who this website is for, what it is that they want to achieve,
-and how your project is the best way to help them achieve these things.
-
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-IMPORTANT: Remember to always include a screenshot of each individual feature!
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 ### Existing Features
 
@@ -405,34 +283,25 @@ IMPORTANT: Remember to always include a screenshot of each individual feature!
 
 ![screenshot](documentation/features/widget_calendar.png)
 
- **Edit Reservation**
+- **Edit Reservation**
 
     - With the edit reservation feature, users have the flexibility to modify their booking details, such as the date, time, or location. This functionality is important for accommodating changes in users' plans, ensuring they can always enjoy their ice cream experience without any hassle. It enhances user satisfaction by providing them with control over their reservations, reflecting our website's user-centric approach.
 
 ![screenshot](documentation/features/reservation_edit.png)
 
- **Cancel Reservation**
+- **Cancel Reservation**
 
     - The cancel reservation feature allows users to easily cancel their bookings through the website. This option is essential for managing unforeseen changes in plans, offering users the freedom to make adjustments as needed without penalty. By including this feature, your website demonstrates understanding and consideration for the user's circumstances, further enhancing their experience and loyalty to our brand.
 
 ![screenshot](documentation/features/reservation_cancel.png)
 
- **Delete Reservation**
+- **Delete Reservation**
 
     - Users can permanently remove a reservation from their history with the delete reservation feature. This functionality is particularly useful for keeping the user's booking history organized and relevant. It also respects the user's preference for privacy and control over their data, aligning with best practices for user experience and data management.
 
 ![screenshot](documentation/features/reservation_delete.png)
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
-
-Repeat as necessary for as many features as your site contains.
-
-Hint: the more, the merrier!
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 ### Future Features
-
 
 - Real-Time Pop-Up Location Tracker
 Feature Overview: Implement a real-time tracking system for the pop-up ice cream village, allowing customers to see the exact location of the service at any given time, along with the estimated wait times..
@@ -443,42 +312,21 @@ Feature Overview: Develop a loyalty program specifically designed for families, 
 
 ## Tools & Technologies Used
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
 
-In this section, you should explain the various tools and technologies used to develop the project.
-Make sure to put a link (where applicable) to the source, and explain what each was used for.
-Some examples have been provided, but this is just a sample only, your project might've used others.
-Feel free to delete any unused items below as necessary.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-- ⚠️⚠️ REQUIRED <-- delete me ⚠️⚠️
 - [![Markdown Builder](https://img.shields.io/badge/Markdown_Builder-grey?logo=markdown&logoColor=000000)](https://tim.2bn.dev/markdown-builder) used to generate README and TESTING templates.
 - [![Git](https://img.shields.io/badge/Git-grey?logo=git&logoColor=F05032)](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
 - [![Git](https://img.shields.io/badge/GitHub-grey?logo=github&logoColor=181717)](https://github.com) used for secure online code storage.
 - [![Gitpod](https://img.shields.io/badge/Gitpod-grey?logo=gitpod&logoColor=FFAE33)](https://gitpod.io) used as a cloud-based IDE for development.
-- ⚠️⚠️ CHOOSE ALL APPLICABLE <-- delete me ⚠️⚠️
 - [![HTML](https://img.shields.io/badge/HTML-grey?logo=html5&logoColor=E34F26)](https://en.wikipedia.org/wiki/HTML) used for the main site content.
 - [![CSS](https://img.shields.io/badge/CSS-grey?logo=css3&logoColor=1572B6)](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
 - [![JavaScript](https://img.shields.io/badge/JavaScript-grey?logo=javascript&logoColor=F7DF1E)](https://www.javascript.com) used for user interaction on the site.
-- [![jQuery](https://img.shields.io/badge/jQuery-grey?logo=jquery&logoColor=0769AD)](https://jquery.com) used for user interaction on the site.
 - [![Python](https://img.shields.io/badge/Python-grey?logo=python&logoColor=3776AB)](https://www.python.org) used as the back-end programming language.
 - [![Heroku](https://img.shields.io/badge/Heroku-grey?logo=heroku&logoColor=430098)](https://www.heroku.com) used for hosting the deployed back-end site.
-- ⚠️⚠️ CHOOSE ONLY ONE (if applicable) <-- delete me ⚠️⚠️
 - [![Bootstrap](https://img.shields.io/badge/Bootstrap-grey?logo=bootstrap&logoColor=7952B3)](https://getbootstrap.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
-- ⚠️⚠️ CHOOSE ALL APPLICABLE <-- delete me ⚠️⚠️
-- [![Google Sheets](https://img.shields.io/badge/Google_Sheets-grey?logo=googlesheets&logoColor=34A853)](https://docs.google.com/spreadsheets) used for storing data from my Python app.
-- [![Jest](https://img.shields.io/badge/Jest-grey?logo=jest&logoColor=c21325)](https://jestjs.io) used for automated JavaScript testing.
-- [![Flask](https://img.shields.io/badge/Flask-grey?logo=flask&logoColor=000000)](https://flask.palletsprojects.com) used as the Python framework for the site.
-- [![MongoDB](https://img.shields.io/badge/MongoDB-grey?logo=mongodb&logoColor=47A248)](https://www.mongodb.com) used as the non-relational database management with Flask.
-- [![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-grey?logo=sqlalchemy&logoColor=D71F00)](https://www.sqlalchemy.org) used as the relational database management with Flask.
 - [![Django](https://img.shields.io/badge/Django-grey?logo=django&logoColor=092E20)](https://www.djangoproject.com) used as the Python framework for the site.
 - [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-grey?logo=postgresql&logoColor=4169E1)](https://www.postgresql.org) used as the relational database management.
 - [![PostgreSQL by Code Institute](https://img.shields.io/badge/PostgreSQL_by_Code_Institute-grey?logo=okta&logoColor=F05223)](https://dbs.ci-dbs.net) used as the Postgres database from Code Institute.
-- [![ElephantSQL](https://img.shields.io/badge/ElephantSQL-grey?logo=postgresql&logoColor=36A6E2)](https://www.elephantsql.com) used as the Postgres database.
-- [![Cloudinary](https://img.shields.io/badge/Cloudinary-grey?logo=cloudinary&logoColor=3448C5)](https://cloudinary.com) used for online static file storage.
 - [![WhiteNoise](https://img.shields.io/badge/WhiteNoise-grey?logo=python&logoColor=FFFFFF)](https://whitenoise.readthedocs.io) used for serving static files with Heroku.
-- [![Stripe](https://img.shields.io/badge/Stripe-grey?logo=stripe&logoColor=008CDD)](https://stripe.com) used for online secure payments of ecommerce products/services.
 - [![Gmail API](https://img.shields.io/badge/Gmail_API-grey?logo=gmail&logoColor=EA4335)](https://mail.google.com) used for sending emails in my application.
 - [![Balsamiq](https://img.shields.io/badge/Balsamiq-grey?logo=barmenia&logoColor=CE0908)](https://balsamiq.com/wireframes) used for creating wireframes.
 - [![Font Awesome](https://img.shields.io/badge/Font_Awesome-grey?logo=fontawesome&logoColor=528DD7)](https://fontawesome.com) used for the icons.
@@ -489,42 +337,44 @@ Feel free to delete any unused items below as necessary.
 Entity Relationship Diagrams (ERD) help to visualize database architecture before creating models.
 Understanding the relationships between different tables can save time later in the project.
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
-
-Using your defined models (one example below), create an ERD with the relationships identified.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 ```python
-class Product(models.Model):
-    category = models.ForeignKey(
-        "Category", null=True, blank=True, on_delete=models.SET_NULL)
-    sku = models.CharField(max_length=254, null=True, blank=True)
-    name = models.CharField(max_length=254)
-    description = models.TextField()
-    has_sizes = models.BooleanField(default=False, null=True, blank=True)
-    price = models.DecimalField(max_digits=6, decimal_places=2)
-    rating = models.DecimalField(
-        max_digits=6, decimal_places=2, null=True, blank=True)
-    image_url = models.URLField(max_length=1024, null=True, blank=True)
-    image = models.ImageField(null=True, blank=True)
+class Reservation(models.Model):
+    """
+    Custom model to have users book a reservation at Mo Ice Cream
+    """
+    customer = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name='reservations')
+    phone_number = models.CharField(
+    max_length=17, validators=[
+        validate_phone_number], null=False, blank=False)
+    date = models.DateField(
+        null=False, blank=False, validators=[validate_future_date])
+    time_slot = models.CharField(max_length=10, choices=[
+        ('Morning', 'Morning'),
+        ('Afternoon', 'Afternoon'),
+        ('Evening', 'Evening'),
+    ], null=False, blank=False)
+    location = models.CharField(max_length=25, choices=[
+        ('Kakenstorf', 'Kakenstorf'),
+        ('Regesbostel', 'Regesbostel'),
+        ('Brackel', 'Brackel'),
+        ('Wistedt', 'Wistedt'),
+        ('Eyendorf', 'Eyendorf'),
+    ], null=False, blank=False)
+    status = models.CharField(max_length=10, choices=[
+        ('Pending', 'Pending'),
+        ('Confirmed', 'Confirmed'),
+        ('Canceled', 'Canceled'),
+    ], default="Pending")
+    book_date = models.DateTimeField(auto_now_add=True)
 
-    def __str__(self):
-        return self.name
+
+class ContactMessage(models.Model):
+    name = models.CharField(max_length=40)
+    email = models.EmailField()
+    message = models.TextField(max_length=350)
+    submitted_at = models.DateTimeField(auto_now_add=True)
 ```
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
-
-A couple recommendations for building free ERDs:
-- [Draw.io](https://draw.io)
-- [Lucidchart](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning)
-
-A more comprehensive ERD can be auto-generated once you're
-at the end of your development stages, just before you submit.
-Follow the steps below to obtain a thorough ERD that you can include.
-Feel free to leave the steps in the README for future use to yourself.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 I have used `pygraphviz` and `django-extensions` to auto-generate an ERD.
 
@@ -605,16 +455,6 @@ Using this approach, I was able to apply the MoSCow prioritization and labels to
 
 ## Deployment
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-**IMPORTANT:**
-
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-- ⚠️ DO NOT update the environment variables to your own! These should NOT be included in this file; just demo values! ⚠️
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 The live deployed application can be found deployed on [Heroku](https://moice-161ddda3bde4.herokuapp.com).
 
 ### PostgreSQL Database
@@ -633,16 +473,27 @@ To obtain my own Postgres Database from Code Institute, I followed these steps:
 > - Code Institute students are allowed a maximum of 8 databases.
 > - Databases are subject to deletion after 18 months.
 
-### Cloudinary API
+### Gmail API
 
-This project uses the [Cloudinary API](https://cloudinary.com) to store media assets online, due to the fact that Heroku doesn't persist this type of data.
+This project uses [Gmail](https://mail.google.com) to handle sending emails to users for account verification and purchase order confirmations.
 
-To obtain your own Cloudinary API key, create an account and log in.
+Once you've created a Gmail (Google) account and logged-in, follow these series of steps to get your project connected.
 
-- For *Primary interest*, you can choose *Programmable Media for image and video API*.
-- Optional: *edit your assigned cloud name to something more memorable*.
-- On your Cloudinary Dashboard, you can copy your **API Environment Variable**.
-- Be sure to remove the `CLOUDINARY_URL=` as part of the API **value**; this is the **key**.
+- Click on the **Account Settings** (cog icon) in the top-right corner of Gmail.
+- Click on the **Accounts and Import** tab.
+- Within the section called "Change account settings", click on the link for **Other Google Account settings**.
+- From this new page, select **Security** on the left.
+- Select **2-Step Verification** to turn it on. (verify your password and account)
+- Once verified, select **Turn On** for 2FA.
+- Navigate back to the **Security** page, and you'll see a new option called **App passwords**.
+- This might prompt you once again to confirm your password and account.
+- Select **Mail** for the app type.
+- Select **Other (Custom name)** for the device type.
+	- Any custom name, such as "Django" or "mo-ice-cream"
+- You'll be provided with a 16-character password (API key).
+	- Save this somewhere locally, as you cannot access this key again later!
+	- `EMAIL_HOST_PASS` = user's 16-character API key
+	- `EMAIL_HOST_USER` = user's own personal Gmail email address
 
 ### Heroku Deployment
 
@@ -659,6 +510,9 @@ Deployment steps are as follows, after account setup:
 
 | Key | Value |
 | --- | --- |
+| `HOST` | user's own value |
+| `EMAIL_HOST_USER` | user's own value |
+| `EMAIL_HOST_PASS` | user's own value |
 | `CLOUDINARY_URL` | user's own value |
 | `DATABASE_URL` | user's own value |
 | `DISABLE_COLLECTSTATIC` | 1 (*this is temporary, and can be removed for the final deployment*) |
@@ -722,12 +576,16 @@ Sample `env.py` file:
 ```python
 import os
 
+os.environ.setdefault("HOST", "user's own value")
+os.environ.setdefault("EMAIL_HOST_USER", "user's own value")
+os.environ.setdefault("EMAIL_HOST_PASS", "user's own value")
 os.environ.setdefault("CLOUDINARY_URL", "user's own value")
 os.environ.setdefault("DATABASE_URL", "user's own value")
 os.environ.setdefault("SECRET_KEY", "user's own value")
 
 # local environment only (do not include these in production/deployment!)
 os.environ.setdefault("DEBUG", "True")
+os.environ.setdefault("DEVELOPMENT", "True")
 ```
 
 Once the project is cloned or forked, in order to run it locally, you'll need to follow these steps:
@@ -771,34 +629,13 @@ You can fork this repository by using the following steps:
 
 ### Local VS Deployment
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
 
-Use this space to discuss any differences between the local version you've developed, and the live deployment site on Heroku.
+The delployed Heroku application behaves slower.
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 ## Credits
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-In this section you need to reference where you got your content, media, and extra help from.
-It is common practice to use code from other repositories and tutorials,
-however, it is important to be very specific about these sources to avoid plagiarism.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 ### Content
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Use this space to provide attribution links to any borrowed code snippets, elements, or resources.
-A few examples have been provided below to give you some ideas.
-
-Ideally, you should provide an actual link to every resource used, not just a generic link to the main site!
-
-⚠️⚠️ EXAMPLE LINKS - REPLACE WITH YOUR OWN ⚠️⚠️
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 | Source | Location | Notes |
 | --- | --- | --- |
@@ -826,44 +663,11 @@ Ideally, you should provide an actual link to every resource used, not just a ge
 
 ### Media
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Use this space to provide attribution links to any images, videos, or audio files borrowed from online.
-A few examples have been provided below to give you some ideas.
-
-If you're the owner (or a close acquaintance) of all media files, then make sure to specify this.
-Let the assessors know that you have explicit rights to use the media files within your project.
-
-Ideally, you should provide an actual link to every media file used, not just a generic link to the main site!
-The list below is by no means exhaustive. Within the Code Institute Slack community, you can find more "free media" links
-by sending yourself the following command: `!freemedia`.
-
-⚠️⚠️ EXAMPLE LINKS - REPLACE WITH YOUR OWN ⚠️⚠️
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 | Source | Location | Type | Notes |
 | --- | --- | --- | --- |
-| [Pexels](https://www.pexels.com) | entire site | image | favicon on all pages |
-| [Lorem Picsum](https://picsum.photos) | home page | image | hero image background |
-| [Unsplash](https://unsplash.com) | product page | image | sample of fake products |
-| [Pixabay](https://pixabay.com) | gallery page | image | group of photos for gallery |
-| [Wallhere](https://wallhere.com) | footer | image | background wallpaper image in the footer |
-| [This Person Does Not Exist](https://thispersondoesnotexist.com) | testimonials | image | headshots of fake testimonial images |
-| [Audio Micro](https://www.audiomicro.com/free-sound-effects) | game page | audio | free audio files to generate the game sounds |
-| [Videvo](https://www.videvo.net/) | home page | video | background video on the hero section |
 | [TinyPNG](https://tinypng.com) | entire site | image | tool for image compression |
 
 ### Acknowledgements
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Use this space to provide attribution to any supports that helped, encouraged, or supported you throughout the development stages of this project.
-A few examples have been provided below to give you some ideas.
-
-⚠️⚠️ EXAMPLES ONLY - REPLACE WITH YOUR OWN ⚠️⚠️
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 - I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for his support throughout the development of this project.
 - I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
