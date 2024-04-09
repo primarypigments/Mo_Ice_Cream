@@ -7,6 +7,13 @@ body > footer {
   top: 100vh;
 }
 
+a, .btn-link {
+  text-decoration: none !important;
+}
+#id_login, #id_password{
+  width: 100%; 
+}
+
 body {
   padding-top: 56px;
   background-color: #f8f1e8; 
@@ -23,6 +30,22 @@ body {
 }
 
 /* Navbar styles */
+
+.ice-cream-toggler-icon {
+    background-image: url("../images/cone_icon.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 27px;
+    height: 27px;
+
+}
+
+.navbar-toggler-icon {
+    background-color: transparent;
+}
+
+
 .navbar_ice {
   background-color:#f8f1e8; 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -146,6 +169,8 @@ footer a {
   color: #f8f1e8;
   border-radius: 5px;
   transition: background-color 0.3s ease-in-out;
+  line-height: 1.5;
+  border: none;
 }
 
 .btn:hover {
@@ -179,8 +204,7 @@ footer a {
 /* Custom button styling */
 button[type="submit"] {
   background-color: #e96a3f; 
-  color: #f8f1e8; 
-  padding: 10px 15px; 
+  color: #f8f1e8;  
   border: none; 
   border-radius: 4px; 
   cursor: pointer;
