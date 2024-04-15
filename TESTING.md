@@ -25,11 +25,6 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | accounts | logout.html | ![screenshot](documentation/validation/logout.png) | |
 | accounts | signup.html | ![screenshot](documentation/validation/register.png) | |
 
-
-
-
-
-
 ### CSS
 
 I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate all of my CSS files.
@@ -40,7 +35,7 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 ### Python
 
-I have used the recommended [PEP8 CI Python Linter] ) to validate all of my Python files.
+I have used the recommended [PEP8 CI Python Linter] (https://pep8ci.herokuapp.com) to validate all of my Python files.
 
 | Directory | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- | --- |
@@ -61,49 +56,28 @@ I have used the recommended [PEP8 CI Python Linter] ) to validate all of my Pyth
 
 I've tested my deployed project on multiple browsers to check for compatibility issues.
 
-| Browser | Home | Contact | Register | Sign In | Make Res | Profile | Edit Res | Cancel Res | Delete Res | PW Reset | PW Reset Done | Set PW | PW Reset Key | Sign Out |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |  
-| Chrome | ![screenshot](documentation/browsers/chrome_index.png) | ![screenshot](documentation/browsers/chrome_contact.png) | ![screenshot](documentation/browsers/chrome_register.png) | ![screenshot](documentation/browsers/chrome_sign_in.png) | ![screenshot](documentation/browsers/chrome_reservation.png) | ![screenshot](documentation/browsers/chrome_profile.png) | ![screenshot](documentation/browsers/chrome_edit.png) | ![screenshot](documentation/browsers/chrome_cancel.png) | ![screenshot](documentation/browsers/chrome_delete.png) | ![screenshot](documentation/browsers/chrome_password_reset.png) | ![screenshot](documentation/browsers/chrome_password_reset_done.png) | ![screenshot](documentation/browsers/chrome_password_set.png) | ![screenshot](documentation/browsers/chrome_password_set_done.png) | ![screenshot](documentation/browsers/chrome_sign_out.png) | Works as expected |
+| Browser | Home | Contact | Register | Sign In | Make Res | Profile | Edit Res | Cancel Res | Delete Res | Sign Out |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Opera | ![screenshot](documentation/browsers/opera_index.png) | ![screenshot](documentation/browsers/opera_contact.png) | ![screenshot](documentation/browsers/opera_register.png) | ![screenshot](documentation/browsers/opera_sign_in.png) | ![screenshot](documentation/browsers/opera_reservation.png) | ![screenshot](documentation/browsers/opera_profile.png) | ![screenshot](documentation/browsers/opera_edit.png) | ![screenshot](documentation/browsers/opera_cancel.png) | ![screenshot](documentation/browsers/opera_delete.png) | ![screenshot](documentation/browsers/opera_sign_out.png) | Works as expected |
 
+| Chrome | ![screenshot](documentation/browsers/chrome_index.png) | ![screenshot](documentation/browsers/chrome_contact.png) | ![screenshot](documentation/browsers/chrome_register.png) | ![screenshot](documentation/browsers/chrome_sign_in.png) | ![screenshot](documentation/browsers/chrome_reservation.png) | ![screenshot](documentation/browsers/chrome_profile.png) | ![screenshot](documentation/browsers/chrome_edit.png) | ![screenshot](documentation/browsers/chrome_cancel.png) | ![screenshot](documentation/browsers/chrome_delete.png) | ![screenshot](documentation/browsers/chrome_sign_out.png) | Works as expected |
 
-| Brave | ![screenshot](documentation/browsers/brave_index.png) | ![screenshot](documentation/browsers/brave_contact.png) | ![screenshot](documentation/browsers/brave_register.png) | ![screenshot](documentation/browsers/brave_sign_in.png) | ![screenshot](documentation/browsers/brave_reservation.png) | ![screenshot](documentation/browsers/brave_profile.png) | ![screenshot](documentation/browsers/brave_edit.png) |![screenshot](documentation/browsers/brave_cancel.png) |![screenshot](documentation/browsers/brave_delete.png) | ![screenshot](documentation/browsers/brave_password_reset.png) | ![screenshot](documentation/browsers/browser-brave-etc.png) |![screenshot](documentation/browsers/browser-brave-etc.png) |![screenshot](documentation/browsers/browser-brave-etc.png) | ![screenshot](documentation/browsers/brave_sign_out.png) |Works as expected |
-| Opera | ![screenshot](documentation/browsers/browser-opera-home.png) | ![screenshot](documentation/browsers/browser-opera-about.png) | ![screenshot](documentation/browsers/browser-opera-contact.png) | ![screenshot](documentation/browsers/browser-opera-etc.png) | Minor differences |
+| Brave | ![screenshot](documentation/browsers/brave_index.png) | ![screenshot](documentation/browsers/brave_contact.png) | ![screenshot](documentation/browsers/brave_register.png) | ![screenshot](documentation/browsers/brave_sign_in.png) | ![screenshot](documentation/browsers/brave_reservation.png) | ![screenshot](documentation/browsers/brave_profile.png) | ![screenshot](documentation/browsers/brave_edit.png) |![screenshot](documentation/browsers/brave_cancel.png) |![screenshot](documentation/browsers/brave_delete.png) | ![screenshot](documentation/browsers/brave_sign_out.png) |Works as expected |
+
 
 ## Responsiveness
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Use this space to discuss testing the live/deployed site on various device sizes.
-
-The minimum requirement is for the following 3 tests:
-- Mobile
-- Tablet
-- Desktop
-
-**IMPORTANT**: You must provide screenshots of the tested responsiveness, to "prove" that you've actually tested them.
-
-Using the "amiresponsive" mockup image (or similar) does not suffice the requirements.
-Consider using some of the built-in device sizes in the Developer Tools.
-
-If you have tested the project on your actual mobile phone or tablet, consider also including screenshots of these as well.
-It showcases a higher level of manual tests, and can be seen as a positive inclusion!
-
-Sample responsiveness testing documentation:
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 I've tested my deployed project on multiple devices to check for responsiveness issues.
 
-| Device | Home | Contact | Register | Sign In | Make Res | Profile | Edit Res | Cancel Res | Delete Res | PW Reset | PW Reset Done | Set PW | PW Rest Key | Log Out |
+| Device | Home | Contact | Register | Sign In | Make Res | Profile | Edit Res | Cancel Res | Delete Res | Log Out |
 | --- | --- | --- | --- | --- | --- |
-| Mobile (DevTools) | ![screenshot](documentation/responsiveness/responsive-mobile-home.png) | ![screenshot](documentation/responsiveness/responsive-mobile-about.png) | ![screenshot](documentation/responsiveness/responsive-mobile-contact.png) | ![screenshot](documentation/responsiveness/responsive-mobile-etc.png) | Works as expected |
-| Tablet (DevTools) | ![screenshot](documentation/responsiveness/responsive-tablet-home.png) | ![screenshot](documentation/responsiveness/responsive-tablet-about.png) | ![screenshot](documentation/responsiveness/responsive-tablet-contact.png) | ![screenshot](documentation/responsiveness/responsive-tablet-etc.png) | Works as expected |
-| Desktop | ![screenshot](documentation/responsiveness/responsive-desktop-home.png) | ![screenshot](documentation/responsiveness/responsive-desktop-about.png) | ![screenshot](documentation/responsiveness/responsive-desktop-contact.png) | ![screenshot](documentation/responsiveness/responsive-desktop-etc.png) | Works as expected |
-| XL Monitor | ![screenshot](documentation/responsiveness/responsive-xl-home.png) | ![screenshot](documentation/responsiveness/responsive-xl-about.png) | ![screenshot](documentation/responsiveness/responsive-xl-contact.png) | ![screenshot](documentation/responsiveness/responsive-xl-etc.png) | Scaling starts to have minor issues |
-| 4K Monitor | ![screenshot](documentation/responsiveness/responsive-4k-home.png) | ![screenshot](documentation/responsiveness/responsive-4k-about.png) | ![screenshot](documentation/responsiveness/responsive-4k-contact.png) | ![screenshot](documentation/responsiveness/responsive-4k-etc.png) | Noticeable scaling issues |
-| Google Pixel 7 Pro | ![screenshot](documentation/responsiveness/responsive-pixel-home.png) | ![screenshot](documentation/responsiveness/responsive-pixel-about.png) | ![screenshot](documentation/responsiveness/responsive-pixel-contact.png) | ![screenshot](documentation/responsiveness/responsive-pixel-etc.png) | Works as expected |
-| iPhone 14 | ![screenshot](documentation/responsiveness/responsive-iphone-home.png) | ![screenshot](documentation/responsiveness/responsive-iphone-about.png) | ![screenshot](documentation/responsiveness/responsive-iphone-contact.png) | ![screenshot](documentation/responsiveness/responsive-iphone-etc.png) | Works as expected |
-| repeat for any other tested browsers | x | x | x | x | x |
+| Mobile (DevTools) | ![screenshot](documentation/responsiveness/mobile_index.png) | ![screenshot](documentation/responsiveness/mobile_contact.png) | ![screenshot](documentation/responsiveness/mobile_register.png) | ![screenshot](documentation/responsiveness/mobile_signin.png) | ![screenshot](documentation/responsiveness/mobile_reservation.png) | ![screenshot](documentation/responsiveness/mobile_profile.png) | ![screenshot](documentation/responsiveness/mobile_edit.png) | ![screenshot](documentation/responsiveness/mobile_cancel.png) | ![screenshot](documentation/responsiveness/mobile_delete.png)  | ![screenshot](documentation/responsiveness/mobile_signout.png)  
+| Works as expected |
+
+
+| Tablet (DevTools) | ![screenshot](documentation/responsiveness/tablet_index.png) | ![screenshot](documentation/responsiveness/tablet_contact.png) | ![screenshot](documentation/responsiveness/tablet_register.png) | ![screenshot](documentation/responsiveness/tablet_signin.png) | ![screenshot](documentation/responsiveness/tablet_reservation.png) | ![screenshot](documentation/responsiveness/tablet_profile.png) | ![screenshot](documentation/responsiveness/tablet_edit.png) | ![screenshot](documentation/responsiveness/tablet_cancel.png) | ![screenshot](documentation/responsiveness/tablet_delete.png)  | ![screenshot](documentation/responsiveness/tablet_signout.png)  | Works as expected |
+
+| Desktop | ![screenshot](documentation/browsers/opera_index.png) | ![screenshot](documentation/browsers/opera_contact.png) | ![screenshot](documentation/browsers/opera_register.png) | ![screenshot](documentation/browsers/opera_sign_in.png) | ![screenshot](documentation/browsers/opera_reservation.png) | ![screenshot](documentation/browsers/opera_profile.png) | ![screenshot](documentation/browsers/opera_edit.png) | ![screenshot](documentation/browsers/opera_cancel.png) | ![screenshot](documentation/browsers/opera_delete.png)  | ![screenshot](documentation/browsers/opera_sign_out.png) | Works as expected |
 
 ## Lighthouse Audit
 
@@ -111,8 +85,8 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 | Page | Mobile | Desktop | Notes |
 | --- | --- | --- | --- |
-| Home | ![screenshot](documentation/lighthouse/lighthouse-home-mobile.png) | ![screenshot](documentation/validation/lighthouse_index_desktop.png) | Some minor warnings |
-| Contact | ![screenshot](documentation/validation/lighthouse_contact_mobile.png) | ![screenshot]documentation/validation/lighthouse_contact_desktop.png) | Some minor warnings |
+| Home | ![screenshot](documentation/validation/lighthouse_home_mobile.png) | ![screenshot](documentation/validation/lighthouse_index_desktop.png) | Some minor warnings |
+| Contact | ![screenshot](documentation/validation/lighthouse_contact_mobile.png) | ![screenshot](documentation/validation/lighthouse_contact_desktop.png) | Some minor warnings |
 | Register | ![screenshot](documentation/validation/lighthouse_register_mobile.png) | ![screenshot](documentation/validation/lighthouse_register_desktop.png) | Some minor warnings |
 | Sign In | ![screenshot](documentation/validation/lighthouse_signin_mobile.png) | ![screenshot](documentation/validation/lighthouse_signin_desktop.png) | Some minor warnings |
 | Make Reservation | ![screenshot](documentation/validation/lighthouse_reservation_mobile.png) | ![screenshot](documentation/validation/lighthouse_reservation_desktop.png) | Some minor warnings |
@@ -120,7 +94,7 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | Edit | ![screenshot](documentation/validation/lighthouse_edit_mobile.png) | ![screenshot](documentation/validation/lighthouse_edit_desktop.png) | Some minor warnings |
 | Cancel | ![screenshot](documentation/validation/lighthouse_cancel_mobile.png) | ![screenshot](documentation/validation/lighthouse_cancel_desktop.png) | Some minor warnings |
 | Delete | ![screenshot](documentation/validation/lighthouse_delete_mobile.png) | ![screenshot](documentation/validation/lighthouse_delete_desktop.png) | Some minor warnings |
-| Forgot Password | ![screenshot](documentation/validation/lighthouse_pwreset_modile.png) | ![documentation/validation/lighthouse_pwreset_desktop.png) | Some minor warnings |
+| Forgot Password | ![screenshot](documentation/validation/lighthouse_pwreset_modile.png) | ![screenshot](documentation/validation/lighthouse_pwreset_desktop.png) | Some minor warnings |
 | PW Reset Done | ![screenshot](documentation/validation/lighthouse_pwresetdone_modile.png) | ![screenshot](documentation/validation/lighthouse_pwresetdone_desktop.png) | Some minor warnings |
 | Set PW | ![screenshot](documentation/validation/lighthouse_pwresetkey_modile.png) | ![screenshot](documentation/validation/lighthouse_pwresetkey_desktop.png) | Some minor warnings |
 | PW Reset Key | ![screenshot](documentation/validation/lighthouse_pwresetkeydone_modile.png) | ![screenshot](documentation/validation/lighthouse_pwresetkeydone_desktop.png) | Some minor warnings |
@@ -133,13 +107,16 @@ Defensive programming was manually tested with the below user acceptance testing
 | Page | Expectation | Test | Result | Fix | Screenshot |
 | --- | --- | --- | --- | --- | --- |
 | Home | | | | | |
-| | Contact is expected to do go to contact page when the user clicks on link | Tested the feature by doing clicking on link | The feature behaved as expected, and it did go to contact page | Test concluded and passed | ![screenshot]|(documentation/features/contact.png) |
-| | Register is expected to do go to register page when the user clicks on link | Tested the feature by doing clicking on link | The feature behaved as expected, and it did go to register page | Test concluded and passed | ![screenshot]|(documentation/features/register.png) |
-| | Sign In is expected to do go to Sign In page when the user clicks on link | Tested the feature by doing clicking on link | The feature behaved as expected, and it did go to Sign In page | Test concluded and passed | ![screenshot]|(documentation/features/signin.png) |
-| | Profile is expected to do go to profile page when the user clicks on link | Tested the feature by doing clicking on link | The feature behaved as expected, and it did go to profile page | Test concluded and passed | ![screenshot]|(documentation/features/feature01.png) |
+| | Contact is expected to do go to contact page when the user clicks on link | Tested the feature by doing clicking on link | The feature behaved as expected, and it did go to contact page | Test concluded and passed | ![screenshot](documentation/features/contact.png) |
+| | Register is expected to do go to register page when the user clicks on link | Tested the feature by doing clicking on link | The feature behaved as expected, and it did go to register page | Test concluded and passed | ![screenshot](documentation/features/register.png) |
+| | Sign In is expected to do go to Sign In page when the user clicks on link | Tested the feature by doing clicking on link | The feature behaved as expected, and it did go to Sign In page | Test concluded and passed | ![screenshot](documentation/features/signin.png) |
+| | Profile is expected to do go to profile page when the user clicks on link | Tested the feature by doing clicking on link | The feature behaved as expected, and it did go to profile page | Test concluded and passed | ![screenshot](documentation/features/profile.png) |
 | | Make Reservation is expected to do go to Make Reservation page when the user clicks on link | Tested the feature by doing clicking on link | The feature behaved as expected, and it did go to Make Reservation page | Test concluded          and passed | ![screenshot](documentation/features/make_reservation.png) |
-| | Sign Out is expected to do go to Sign Out page when the user clicks on link | Tested the feature by doing clicking on link | The feature behaved as expected, and it did go to Log Out page | Test concluded and passed | ![screenshot]|(documentation/features/signout.png) |
+| | Sign Out is expected to do go to Sign Out page when the user clicks on link | Tested the feature by doing clicking on link | The feature behaved as expected, and it did go to Log Out page | Test concluded and passed | ![screenshot](documentation/features/signout.png) |
 | | About Us modal is expected to open 3 different modals when the user clicks on them | Tested the feature by doing clicking on the modal | The feature behaved as expected, and they did opened when clicked | Test concluded and passed | ![screenshot](documentation/features/modal.png) |
+| | Flavors modal close Button is expected to to close tho modal when the user clicks on it | Tested the feature by doing clicking on the buttom | The feature behaved as expected, and closed when clicked | Test concluded and passed | ![screenshot](documentation/features/mod_fla.png) |
+| | Village Pop Up modal Close Button is expected to to close tho modal when the user clicks on it | Tested the feature by doing clicking on the buttom | The feature behaved as expected, and closed when clicked | Test concluded and passed | ![screenshot](documentation/features/mod_cate.png) |
+| | How to book Close Button modal is expected to to close tho modal when the user clicks on it | Tested the feature by doing clicking on the buttom | The feature behaved as expected, and closed when clicked | Test concluded and passed | ![screenshot](documentation/features/mod_book.png) |
 |
 | Contact | | | | | |
 | | Name is expected to be required when the user does not not fill it out | Tested the feature by leaving it blank | The feature behaved as expected, and it give the user a message a the input is required | Test concluded and passed | ![screenshot](documentation/features/name.png) |
@@ -150,28 +127,27 @@ Defensive programming was manually tested with the below user acceptance testing
 | Register | | | | | |
 | | Username is expected to be required when the user does not not fill it out | Tested the feature by leaving it blank | The feature behaved as expected, and it give the user a message a the input is required | Test concluded and passed | ![screenshot](documentation/features/username.png) |
 | | Email is expected to be required when the user does not not fill it out and will only accept email address format | Tested the feature by leaving it blank | The feature behaved as expected, and it give the user a message a the input is required or enter a valid email format message | Test concluded and passed | ![screenshot](documentation/features/email.png) |
-| Password is expected to be required when the user does not not fill it out and will only accept password format | Tested the feature by leaving it blank and inouting a invalid passowrd format | The feature behaved as expected, and it give the user a message a the input is required or in enter valid format | Test concluded and passed | ![screenshot](documentation/features/password.png) |
+| |Password is expected to be required when the user does not not fill it out and will only accept password format | Tested the feature by leaving it blank and inouting a invalid passowrd format | The feature behaved as expected, and it give the user a message a the input is required or in enter valid format | Test concluded and passed | ![screenshot](documentation/features/password.png) |
 | | Register Button is expected to post registration of user when user clicks on the button | Tested the feature by doing clicking on button | The feature behaved as expected, and it gave success message | Test concluded and passed | ![screenshot](documentation/features/register_button.png) |
 |
 | Sign In | | | | | |
 | | Username is expected to be required when the user does not not fill it out | Tested the feature by leaving it blank | The feature behaved as expected, and it give the user a message a the input is required | Test concluded and passed | ![screenshot](documentation/features/username.png) |
-| | Sign In Button is expected when successfull redirect to index page with a success message  | Tested the feature by filling out a valid username and password and clicking the sign in button | The feature behaved as expected, and it redirected to index page with success message. | Test concluded and passed | ![screenshot](documentation/features/feature03.png) |
-| | Sign In Button is expected when invalid login the user is notified with a error message    | Tested the feature by filling out a invalid username and password and clicking the sign in button | The feature behaved as expected, and it redirected to index page with success message. | Test concluded and passed | ![screenshot](documentation/features/feature03.png) |
-| | Forgot Passowrd Button expected to redirect to a forgot password page. | Tested the feature by clicking the button | The feature behaved as expected, and it redirected the user to the forgot passowrd page. | Test concluded and passed | ![screenshot](documentation/features/feature03.png) |
-
+| | Sign In Button is expected when successfull redirect to index page with a success message  | Tested the feature by filling out a valid username and password and clicking the sign in button | The feature behaved as expected, and it redirected to index page with success message. | Test concluded and passed | ![screenshot](documentation/features/signin_button.png) |
+| | Forgot Passowrd Button expected to redirect to a forgot password page. | Tested the feature by clicking the button | The feature behaved as expected, and it redirected the user to the forgot passowrd page. | Test concluded and passed | ![screenshot](documentation/features/forgot_pw.png) |
+|
 | MaKe Reservation | | | | | |
 | | Phone Number is expected to be required when the user does not not fill it out | Tested the feature by leaving it blank | The feature behaved as expected, and it give the user a message a the input is required | Test concluded and passed | ![screenshot](documentation/features/phone_number.png) |
 | | Date Calendar is expected to display a calendar for the user to pick a date | Tested the feature by doing the calendar icon | The feature behaved as expected, and it displayed a calaendar | Test concluded and passed | ![screenshot](documentation/features/widget_calendar.png) |
 | | Time Slot is expected to display a list when the user click on the input field | Tested the feature by doing clicking input field | The feature behaved as expected, and it displayed a list | Test concluded and passed | ![screenshot](documentation/features/time_slot.png) |
 | | Location is expected to display a list when the user click on the input field | Tested the feature by doing clicking input field | The feature behaved as expected, and it displayed a list | Test concluded and passed | ![screenshot](documentation/features/location.png) |
 | | Submit Reservation Button expected to redirect to a profile page with a success message. | Tested the feature by clicking the button | The feature behaved as expected, and it redirected the user to the profile page with a success message. | Test concluded and passed | ![screenshot](documentation/features/reservation_submit.png) |
-
+|
 | Profile | | | | | |
 | | Reservation list is expected to display users reservations when a user makes a reservation | Tested the feature by doing making a reservation | The feature behaved as expected, and it displays reservations | Test concluded and passed | ![screenshot](documentation/features/profile_l.png) |
 | | Edit Reservation Button expected to redirect to a Edit Reservation page. | Tested the feature by clicking the button | The feature behaved as expected, and it redirected the user to the Edit Reservation. | Test concluded and passed | ![screenshot](documentation/features/reservation_edit.png) |
 | | Cancel Reservation Button expected to redirect to a Cancel Reservation with. | Tested the feature by clicking the button | The feature behaved as expected, and it redirected the user to the Cancel Reservation Page. | Test concluded and passed | ![screenshot](documentation/features/reservation_cancel.png) |
-Delete Reservation Button expected to redirect to a Cancel Reservation with. | Tested the feature by clicking the button | The feature behaved as expected, and it redirected the user to the Delete Reservation Page. | Test concluded and passed | ![screenshot](documentation/features/reservation_delete.png) |
-
+| |Delete Reservation Button expected to redirect to a Cancel Reservation with. | Tested the feature by clicking the button | The feature behaved as expected, and it redirected the user to the Delete Reservation Page. | Test concluded and passed | ![screenshot](documentation/features/reservation_delete.png) |
+|
 | Edit Reservtion | | | | | |
 | | Phone Number is expected to be required when the user does not not fill it out | Tested the feature by leaving it blank | The feature behaved as expected, and it give the user a message a the input is required | Test concluded and passed | ![screenshot](documentation/features/phone_number.png) |
 | | Date Calendar is expected to display a calendar for the user to pick a date | Tested the feature by doing the calendar icon | The feature behaved as expected, and it displayed a calaendar | Test concluded and passed | ![screenshot](documentation/features/widget_calendar.png) |
@@ -180,43 +156,29 @@ Delete Reservation Button expected to redirect to a Cancel Reservation with. | T
 | | Edit Reservation Button expected to redirect to a profile page with a success message. | Tested the feature by clicking the button | The feature behaved as expected, and it redirected the user to the profile page with a success message. | Test concluded and passed | ![screenshot](documentation/features/reservation_edit.png) |
 |
 | Cancel Reservation | | | | | |
-| | | Cancel Reservation Button expected to redirect to a profile page with a success message. | Tested the feature by clicking the button | The feature behaved as expected, and it redirected the user to the profile page with a success message. | Test concluded and passed | ![screenshot](documentation/features/cancel.png) |
-| | | Cancel Button expected to redirect to a profile page. | Tested the feature by clicking the button | The feature behaved as expected, and it redirected the user to the profile page. | Test concluded and passed | ![screenshot](documentation/features/cancel.png) |
+| | Cancel Reservation Button expected to redirect to a profile page with a success message. | Tested the feature by clicking the button | The feature behaved as expected, and it redirected the user to the profile page with a success message. | Test concluded and passed | ![screenshot](documentation/features/cancel.png) |
+| | Cancel Button expected to redirect to a profile page. | Tested the feature by clicking the button | The feature behaved as expected, and it redirected the user to the profile page. | Test concluded and passed | ![screenshot](documentation/features/cancel.png) |
  |
 | Delete Reservation | | | | | |
-| | | Delete Reservation Button expected to redirect to a profile page with a success message. | Tested the feature by clicking the button | The feature behaved as expected, and it redirected the user to the profile page with a success message. | Test concluded and passed | ![screenshot](documentation/features/delete.png) |
-| | | Cancel Button expected to redirect to a profile page. | Tested the feature by clicking the button | The feature behaved as expected, and it redirected the user to the profile page. | Test concluded and passed | ![screenshot](documentation/features/delete.png) | |
+| | Delete Reservation Button expected to redirect to a profile page with a success message. | Tested the feature by clicking the button | The feature behaved as expected, and it redirected the user to the profile page with a success message. | Test concluded and passed | ![screenshot](documentation/features/delete.png) |
+| | Cancel Button expected to redirect to a profile page. | Tested the feature by clicking the button | The feature behaved as expected, and it redirected the user to the profile page. | Test concluded and passed | ![screenshot](documentation/features/delete.png) | |
 |
 | Sign out | | | | | |
 | | Sign Out Button is expected sign out user and redirect to index page with a success message  | Tested the feature by clicking the sign out button | The feature behaved as expected, and it redirected to index page with success message. | Test concluded and passed | ![screenshot](documentation/features/signout_buttons.png) |
 |
-| Forgot Password | | | | | |
+| Forgot Password | | |
 | | Email is expected to be required when the user does not not fill it out and will only accept email address format | Tested the feature by leaving it blank | The feature behaved as expected, and it give the user a message a the input is required or enter a valid email format message | Test concluded and passed | ![screenshot](documentation/features/email.png) |
 | | Reset My Password Button is expected to send a email to user with reset password link and then redirect user to reset info page. | Tested the feature by doing filling out email inout and clicking Reset Password Button. | The feature behaved as expected, and it send a email and redirected to info page. | Test concluded and passed | ![screenshot](documentation/features/password_reset.png) | |
 |
 | Change Password | | | | | |
-| Password is expected to be required when the user does not not fill it out and will only accept password format | Tested the feature by leaving it blank and inouting a invalid passowrd format | The feature behaved as expected, and it give the user a message a the input is required or in enter valid format | Test concluded and passed | ![screenshot](documentation/features/change_password_again.png) |
-| Reenter Password is expected to be required when the user does not not fill it out | Tested the feature by leaving it blank | The feature behaved as expected, and it give the user a message a the input is required | Test concluded and passed | ![screenshot](documentation/features/change_password_again.png) |
+| | Password is expected to be required when the user does not not fill it out and will only accept password format | Tested the feature by leaving it blank and inouting a invalid passowrd format | The feature behaved as expected, and it give the user a message a the input is required or in enter valid format | Test concluded and passed | ![screenshot](documentation/features/change_password_again.png) |
+| | Reenter Password is expected to be required when the user does not not fill it out | Tested the feature by leaving it blank | The feature behaved as expected, and it give the user a message a the input is required | Test concluded and passed | ![screenshot](documentation/features/change_password_again.png) |
 | | Change Password Button is expected to redirect user to password change confirmation page. | Tested the feature by doing filling out email inout and clicking Change Password Button. | The feature behaved as expected, and it  redirected to password change confirmation page. | Test concluded and passed | ![screenshot](documentation/features/change_password.png) | |
 |
-| Messages | | | | | |
+| Messages | |
 | | Success Messages is expected when user successfully sign in, sign out, register, reservation, edit reservation, cancel reservation, delete reservation  user is shown a green success message  | Tested the feature by successfully sign in, sign out, register, reservation, edit reservation, cancel reservation, delete reservation | The feature behaved as expected, and they show user a green success message. | Test concluded and passed | ![screenshot](documentation/features/success_messages.png) |
 
-| repeat for all remaining pages | x | x | x | x | x |
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 ## User Story Testing
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Testing user stories is actually quite simple, once you've already got the stories defined on your README.
-
-Most of your project's **features** should already align with the **user stories**,
-so this should as simple as creating a table with the user story, matching with the re-used screenshot
-from the respective feature.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 | User Story | Screenshot |
 | --- | --- |
@@ -230,139 +192,9 @@ from the respective feature.
 | As a site administrator, I should be able to add, update, or remove ice cream flavors and descriptions, so that I can keep the menu current with available offerings. | ![screenshot](documentation/features/admin_menu.png) |
 | As a site administrator, I should be able to manage the locations of the pop-up service, so that I can ensure accurate and up-to-date information is available for users. | ![screenshot](documentation/features/admin_locations.png) |
 
-
-## Automated Testing
-
-I have conducted a series of automated tests on my application.
-
-I fully acknowledge and understand that, in a real-world scenario, an extensive set of additional tests would be more comprehensive.
-
-### Python (Unit Testing)
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Adjust the code below (file names, etc.) to match your own project files/folders.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-I have used Django's built-in unit testing framework to test the application functionality.
-
-In order to run the tests, I ran the following command in the terminal each time:
-
-`python3 manage.py test name-of-app `
-
-To create the coverage report, I would then run the following commands:
-
-`coverage run --source=name-of-app manage.py test`
-
-`coverage report`
-
-To see the HTML version of the reports, and find out whether some pieces of code were missing, I ran the following commands:
-
-`coverage html`
-
-`python3 -m http.server`
-
-Below are the results from the various apps on my application that I've tested:
-
-| App | File | Coverage | Screenshot |
-| --- | --- | --- | --- |
-| Bag | test_forms.py | 99% | ![screenshot](documentation/tests/py-test-bag-forms.png) |
-| Bag | test_models.py | 89% | ![screenshot](documentation/tests/py-test-bag-models.png) |
-| Bag | test_urls.py | 100% | ![screenshot](documentation/tests/py-test-bag-urls.png) |
-| Bag | test_views.py | 71% | ![screenshot](documentation/tests/py-test-bag-views.png) |
-| Checkout | test_forms.py | 99% | ![screenshot](documentation/tests/py-test-checkout-forms.png) |
-| Checkout | test_models.py | 89% | ![screenshot](documentation/tests/py-test-checkout-models.png) |
-| Checkout | test_urls.py | 100% | ![screenshot](documentation/tests/py-test-checkout-urls.png) |
-| Checkout | test_views.py | 71% | ![screenshot](documentation/tests/py-test-checkout-views.png) |
-| Home | test_forms.py | 99% | ![screenshot](documentation/tests/py-test-home-forms.png) |
-| Home | test_models.py | 89% | ![screenshot](documentation/tests/py-test-home-models.png) |
-| Home | test_urls.py | 100% | ![screenshot](documentation/tests/py-test-home-urls.png) |
-| Home | test_views.py | 71% | ![screenshot](documentation/tests/py-test-home-views.png) |
-| Products | test_forms.py | 99% | ![screenshot](documentation/tests/py-test-products-forms.png) |
-| Products | test_models.py | 89% | ![screenshot](documentation/tests/py-test-products-models.png) |
-| Products | test_urls.py | 100% | ![screenshot](documentation/tests/py-test-products-urls.png) |
-| Products | test_views.py | 71% | ![screenshot](documentation/tests/py-test-products-views.png) |
-| Profiles | test_forms.py | 99% | ![screenshot](documentation/tests/py-test-profiles-forms.png) |
-| Profiles | test_models.py | 89% | ![screenshot](documentation/tests/py-test-profiles-models.png) |
-| Profiles | test_urls.py | 100% | ![screenshot](documentation/tests/py-test-profiles-urls.png) |
-| Profiles | test_views.py | 71% | ![screenshot](documentation/tests/py-test-profiles-views.png) |
-| x | x | x | repeat for all remaining tested apps/files |
-
-#### Unit Test Issues
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-Use this section to list any known issues you ran into while writing your unit tests.
-Remember to include screenshots (where possible), and a solution to the issue (if known).
-
-This can be used for both "fixed" and "unresolved" issues.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 ## Bugs
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-This section is primarily used for JavaScript and Python applications,
-but feel free to use this section to document any HTML/CSS bugs you might run into.
-
-It's very important to document any bugs you've discovered while developing the project.
-Make sure to include any necessary steps you've implemented to fix the bug(s) as well.
-
-**PRO TIP**: screenshots of bugs are extremely helpful, and go a long way!
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-- JS Uncaught ReferenceError: `foobar` is undefined/not defined
-
-    ![screenshot](documentation/bugs/bug01.png)
-
-    - To fix this, I _____________________.
-
-- JS `'let'` or `'const'` or `'template literal syntax'` or `'arrow function syntax (=>)'` is available in ES6 (use `'esversion: 11'`) or Mozilla JS extensions (use moz).
-
-    ![screenshot](documentation/bugs/bug02.png)
-
-    - To fix this, I _____________________.
-
-- Python `'ModuleNotFoundError'` when trying to import module from imported package
-
-    ![screenshot](documentation/bugs/bug03.png)
-
-    - To fix this, I _____________________.
-
-- Django `TemplateDoesNotExist` at /appname/path appname/template_name.html
-
-    ![screenshot](documentation/bugs/bug04.png)
-
-    - To fix this, I _____________________.
-
-- Python `E501 line too long` (93 > 79 characters)
-
-    ![screenshot](documentation/bugs/bug04.png)
-
-    - To fix this, I _____________________.
-
 ### GitHub **Issues**
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-An improved way to manage bugs is to use the built-in **Issues** tracker on your GitHub repository.
-To access your Issues, click on the "Issues" tab at the top of your repository.
-Alternatively, use this link: https://github.com/primarypigments/mo_ice_cream/issues
-
-If using the Issues tracker for your bug management, you can simplify the documentation process.
-Issues allow you to directly paste screenshots into the issue without having to first save the screenshot locally,
-then uploading into your project.
-
-You can add labels to your issues (`bug`), assign yourself as the owner, and add comments/updates as you progress with fixing the issue(s).
-
-Once you've sorted the issue, you should then "Close" it.
-
-When showcasing your bug tracking for assessment, you can use the following format:
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 **Fixed Bugs**
 
@@ -372,9 +204,13 @@ All previously closed/fixed bugs can be tracked [here](https://github.com/primar
 
 | Bug | Status |
 | --- | --- |
-| [JS Uncaught ReferenceError: `foobar` is undefined/not defined](https://github.com/primarypigments/mo_ice_cream/issues/1) | Closed |
+| [Python `'E901 TokenError'`](https://github.com/primarypigments/mo_ice_cream/issues/13) | Closed |
+| [Python `'E131 error urlpatterns'`](https://github.com/primarypigments/mo_ice_cream/issues/12) | Closed |
+| [Python `'E128 continuation line under-indented for visual indent'`](https://github.com/primarypigments/mo_ice_cream/issues/11) | Closed |
 | [Python `'ModuleNotFoundError'` when trying to import module from imported package](https://github.com/primarypigments/mo_ice_cream/issues/2) | Closed |
-| [Django `TemplateDoesNotExist` at /appname/path appname/template_name.html](https://github.com/primarypigments/mo_ice_cream/issues/3) | Closed |
+| [Django `'TemplateDoesNotExist'` at /templates/account](https://github.com/primarypigments/mo_ice_cream/issues/18) | Closed |
+| [Django `'Error NameError: name reverse' is not defined in base.py'`](https://github.com/primarypigments/mo_ice_cream/issues/17) | Closed |
+| [Django `' Reset Password not working for specific email primarypigments@gmail.com'`](https://github.com/primarypigments/mo_ice_cream/issues/19) | Closed |
 
 **Open Issues**
 
@@ -383,51 +219,6 @@ All previously closed/fixed bugs can be tracked [here](https://github.com/primar
 
 Any remaining open issues can be tracked [here](https://github.com/primarypigments/mo_ice_cream/issues).
 
-| Bug | Status |
-| --- | --- |
-| [JS `'let'` or `'const'` or `'template literal syntax'` or `'arrow function syntax (=>)'` is available in ES6 (use `'esversion: 11'`) or Mozilla JS extensions (use moz).](https://github.com/primarypigments/mo_ice_cream/issues/4) | Open |
-| [Python `E501 line too long` (93 > 79 characters)](https://github.com/primarypigments/mo_ice_cream/issues/5) | Open |
-
 ## Unfixed Bugs
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-You will need to mention unfixed bugs and why they were not fixed.
-This section should include shortcomings of the frameworks or technologies used.
-Although time can be a big variable to consider, paucity of time and difficulty understanding
-implementation is not a valid reason to leave bugs unfixed.
-
-If you've identified any unfixed bugs, no matter how small, be sure to list them here.
-It's better to be honest and list them, because if it's not documented and an assessor finds the issue,
-they need to know whether or not you're aware of them as well, and why you've not corrected/fixed them.
-
-Some examples:
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-- On devices smaller than 375px, the page starts to have `overflow-x` scrolling.
-
-    ![screenshot](documentation/bugs/unfixed-bug01.png)
-
-    - Attempted fix: I tried to add additional media queries to handle this, but things started becoming too small to read.
-
-- For PP3, when using a helper `clear()` function, any text above the height of the terminal does not clear, and remains when you scroll up.
-
-    ![screenshot](documentation/bugs/unfixed-bug02.png)
-
-    - Attempted fix: I tried to adjust the terminal size, but it only resizes the actual terminal, not the allowable area for text.
-
-- When validating HTML with a semantic `section` element, the validator warns about lacking a header `h2-h6`. This is acceptable.
-
-    ![screenshot](documentation/bugs/unfixed-bug03.png)
-
-    - Attempted fix: this is a known warning and acceptable, and my section doesn't require a header since it's dynamically added via JS.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-START OF NOTES (to be deleted)
-
-If you legitimately cannot find any unfixed bugs or warnings, then use the following sentence:
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-> [!NOTE]  
 > There are no remaining bugs that I am aware of.

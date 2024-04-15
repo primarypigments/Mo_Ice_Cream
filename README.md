@@ -22,18 +22,7 @@ source: [amiresponsive](https://ui.dev/amiresponsive?url=https://moice-161ddda3b
 
 ## UX
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑START OF NOTES (to be deleted)
-
-In this section, you will briefly explain your design processes.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
 ### Colour Scheme
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑START OF NOTES (to be deleted)
-
-My color scheme creates a visually appealing and psychologically stimulating environment tailored to Mo ice Cream . The choice of a light, warm background and dark text ensures readability and comfort, while the orange-red highlights inject energy and draw attention to key actions and messages. This thoughtful use of color can enhance user engagement and contribute to a positive user experience.
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 - `#f8f1e8` used for Body background color.
 - `#2b2929` used for primary text.
@@ -41,50 +30,14 @@ My color scheme creates a visually appealing and psychologically stimulating env
 - `#f8f1e8` used for secondary text.
 - `#c95631` used for secondary highlights.
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑START OF NOTES (to be deleted)
+I used [coolors.co](https://coolors.co/f8f1e8-2b2929-e96a3f-f8f1e8-c95631) to generate my colour palette.
 
-Consider adding a link and screenshot for your colour scheme using "coolors".
-https://coolors.co/generate
-
-When you add a colour to the palette, the URL is dynamically updated, making it easier for you to return back to your colour palette later if needed.
-
-Example:
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-I used [coolors.co](https://coolors.co/e84610-009fe3-4a4a4f-445261-d63649-e6ecf0-000000) to generate my colour palette.
-
-![screenshot](documentation/coolors.png)
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑START OF NOTES (to be deleted)
-
-⚠️ ONLY IF YOU ACTUALLY ADDED `:root` variables in CSS! ⚠️
-If you've used CSS `:root` variables, consider also including a code snippet here!
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
-
-I've used CSS `:root` variables to easily update the global colour scheme by changing only one value, instead of everywhere in the CSS file.
-
-```css
-:root {
-    /* P = Primary | S = Secondary */
-    --p-text: #000000;
-    --p-highlight: #E84610;
-    --s-text: #4A4A4F;
-    --s-highlight: #009FE3;
-    --white: #FFFFFF;
-    --black: #000000;
-}
-```
+![screenshot](documentation/coolers.png)
 
 ### Typography
 
-🛑🛑🛑🛑🛑🛑🛑🛑🛑START OF NOTES (to be deleted)
-
 My choice of "Patrick Hand" for Mo Ice Cream is rooted in a desire to create a friendly, approachable, and memorable online presence that aligns with the brand's identity and values, while ensuring good user experience and accessibility.
 
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 - [Patrick Hand](https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap") was used for the primary headers and titles.
 
@@ -216,8 +169,6 @@ Delete Reservation
 Logout
   - ![screenshot](documentation/wireframe/sign_out_ipad.png)
 
-
-
 </details>
 
 ### Desktop Wireframes
@@ -256,8 +207,6 @@ Delete Reservation
 
 Logout
   - ![screenshot](documentation/wireframe/sign_out.png)
-
-
 
 </details>
 
@@ -669,8 +618,7 @@ The delployed Heroku application behaves slower.
 
 ### Acknowledgements
 
-- I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for his support throughout the development of this project.
-- I would like to thank the [Code Institute](https://codeinstitute.net) tutor team for their assistance with troubleshooting and debugging some project issues.
-- I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support; it kept me going during periods of self doubt and imposter syndrome.
-- I would like to thank my partner (John/Jane), for believing in me, and allowing me to make this transition into software development.
-- I would like to thank my employer, for supporting me in my career development change towards becoming a software developer.
+- My heartfelt thanks to my Code Institute mentor, Tim Nelson, for his invaluable support during this project's development.
+- A special thanks to the tutor team at the Code Institute for their expert help with troubleshooting and debugging issues I encountered.
+- Immense gratitude to the Code Institute Slack community for the moral support that sustained me through moments of doubt and imposter syndrome.
+- I'm deeply thankful to my partner Coleen for her belief in me and her support as I transition into software development.
