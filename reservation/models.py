@@ -33,19 +33,37 @@ class Reservation(models.Model):
     ], default="Pending")
     book_date = models.DateTimeField(auto_now_add=True)
 
+
     class Meta:
+        """
+        Returns a string representation of the reservation
+        with its date formatted as "Month day, Year".
+        """
         unique_together = ('date', 'time_slot', 'location')
 #https://docs.djangoproject.com/en/4.2/ref/models/options/#unique-together
+
+
     def __str__(self):
         return self.date.strftime("%B %d, %Y")
 
 
 class ContactMessage(models.Model):
+    """
+    Model to store contact messages submitted by users.
+    Includes fields for name, email,
+    and the message content, along with a
+    timestamp marking when the message was submitted.
+    """
     name = models.CharField(max_length=40)
     email = models.EmailField()
     message = models.TextField(max_length=350)
     submitted_at = models.DateTimeField(auto_now_add=True)
 #https://docs.djangoproject.com/en/4.2/ref/models/database-functions/
 
+
     def __str__(self):
+        """
+        Returns a string representation of the message,
+        showing the sender's name and email.
+        """
         return f"Message from {self.name} - {self.email}"

@@ -4,6 +4,9 @@ import re
 
 
 def validate_future_date(value):
+    """
+    Validates that a given date is not in the past.
+    """
     today_date = timezone.localdate()  # Get today's date
     if value < today_date:
         raise ValidationError(
@@ -11,6 +14,9 @@ def validate_future_date(value):
 
 
 def validate_phone_number(value):
+    """
+    Validates that a given date is not in the past.
+    """
     phone_number_validate = r'^\+?(49)?0?\d{9,17}$'
     if not re.match(phone_number_validate, value):
         raise ValidationError(

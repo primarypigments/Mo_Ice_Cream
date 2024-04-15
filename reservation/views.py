@@ -98,6 +98,9 @@ def delete_reservation(request, id):
 
 @login_required
 def cancel_reservation(request, id):
+    """
+    Cancels a reservation if the current user owns it; redirects otherwise.
+    """
     reservation = get_object_or_404(Reservation, id=id)
 
     if reservation.customer != request.user:
@@ -125,6 +128,9 @@ def cancel_reservation(request, id):
 
 @login_required
 def profile(request):
+    """
+    Displays the reservations for the logged-in user.
+    """
     reservations = Reservation.objects.filter(customer=request.user)
     template = "reservation/profile.html"
     context = {
@@ -134,6 +140,9 @@ def profile(request):
 
 
 def contact(request):
+    """
+    Handles incoming contact messages or displays the form.
+    """
     if request.method == "POST":
         name = request.POST.get('name')
         email = request.POST.get('email')
