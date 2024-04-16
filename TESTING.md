@@ -57,11 +57,9 @@ I have used the recommended [PEP8 CI Python Linter] (https://pep8ci.herokuapp.co
 I've tested my deployed project on multiple browsers to check for compatibility issues.
 
 | Browser | Home | Contact | Register | Sign In | Make Res | Profile | Edit Res | Cancel Res | Delete Res | Sign Out |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Opera | ![screenshot](documentation/browsers/opera_index.png) | ![screenshot](documentation/browsers/opera_contact.png) | ![screenshot](documentation/browsers/opera_register.png) | ![screenshot](documentation/browsers/opera_sign_in.png) | ![screenshot](documentation/browsers/opera_reservation.png) | ![screenshot](documentation/browsers/opera_profile.png) | ![screenshot](documentation/browsers/opera_edit.png) | ![screenshot](documentation/browsers/opera_cancel.png) | ![screenshot](documentation/browsers/opera_delete.png) | ![screenshot](documentation/browsers/opera_sign_out.png) | Works as expected |
-
 | Chrome | ![screenshot](documentation/browsers/chrome_index.png) | ![screenshot](documentation/browsers/chrome_contact.png) | ![screenshot](documentation/browsers/chrome_register.png) | ![screenshot](documentation/browsers/chrome_sign_in.png) | ![screenshot](documentation/browsers/chrome_reservation.png) | ![screenshot](documentation/browsers/chrome_profile.png) | ![screenshot](documentation/browsers/chrome_edit.png) | ![screenshot](documentation/browsers/chrome_cancel.png) | ![screenshot](documentation/browsers/chrome_delete.png) | ![screenshot](documentation/browsers/chrome_sign_out.png) | Works as expected |
-
 | Brave | ![screenshot](documentation/browsers/brave_index.png) | ![screenshot](documentation/browsers/brave_contact.png) | ![screenshot](documentation/browsers/brave_register.png) | ![screenshot](documentation/browsers/brave_sign_in.png) | ![screenshot](documentation/browsers/brave_reservation.png) | ![screenshot](documentation/browsers/brave_profile.png) | ![screenshot](documentation/browsers/brave_edit.png) |![screenshot](documentation/browsers/brave_cancel.png) |![screenshot](documentation/browsers/brave_delete.png) | ![screenshot](documentation/browsers/brave_sign_out.png) |Works as expected |
 
 
@@ -70,13 +68,10 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 I've tested my deployed project on multiple devices to check for responsiveness issues.
 
 | Device | Home | Contact | Register | Sign In | Make Res | Profile | Edit Res | Cancel Res | Delete Res | Log Out |
-| --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Mobile (DevTools) | ![screenshot](documentation/responsiveness/mobile_index.png) | ![screenshot](documentation/responsiveness/mobile_contact.png) | ![screenshot](documentation/responsiveness/mobile_register.png) | ![screenshot](documentation/responsiveness/mobile_signin.png) | ![screenshot](documentation/responsiveness/mobile_reservation.png) | ![screenshot](documentation/responsiveness/mobile_profile.png) | ![screenshot](documentation/responsiveness/mobile_edit.png) | ![screenshot](documentation/responsiveness/mobile_cancel.png) | ![screenshot](documentation/responsiveness/mobile_delete.png)  | ![screenshot](documentation/responsiveness/mobile_signout.png)  
 | Works as expected |
-
-
 | Tablet (DevTools) | ![screenshot](documentation/responsiveness/tablet_index.png) | ![screenshot](documentation/responsiveness/tablet_contact.png) | ![screenshot](documentation/responsiveness/tablet_register.png) | ![screenshot](documentation/responsiveness/tablet_signin.png) | ![screenshot](documentation/responsiveness/tablet_reservation.png) | ![screenshot](documentation/responsiveness/tablet_profile.png) | ![screenshot](documentation/responsiveness/tablet_edit.png) | ![screenshot](documentation/responsiveness/tablet_cancel.png) | ![screenshot](documentation/responsiveness/tablet_delete.png)  | ![screenshot](documentation/responsiveness/tablet_signout.png)  | Works as expected |
-
 | Desktop | ![screenshot](documentation/browsers/opera_index.png) | ![screenshot](documentation/browsers/opera_contact.png) | ![screenshot](documentation/browsers/opera_register.png) | ![screenshot](documentation/browsers/opera_sign_in.png) | ![screenshot](documentation/browsers/opera_reservation.png) | ![screenshot](documentation/browsers/opera_profile.png) | ![screenshot](documentation/browsers/opera_edit.png) | ![screenshot](documentation/browsers/opera_cancel.png) | ![screenshot](documentation/browsers/opera_delete.png)  | ![screenshot](documentation/browsers/opera_sign_out.png) | Works as expected |
 
 ## Lighthouse Audit
