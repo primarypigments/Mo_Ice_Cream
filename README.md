@@ -106,23 +106,6 @@ Cancel Reservation
 Delete Reservation
   - ![screenshot](documentation/wireframe/delete_iphone.png)
 
-
-Forgot Password
-  - ![screenshot](documentation/wireframes/mobile-gallery.png)
-
-
-Password Reset Info
-  - ![screenshot](documentation/wireframes/mobile-gallery.png)
-
-
-Password Reset Confirm
-  - ![screenshot](documentation/wireframes/mobile-gallery.png)
-
-
-Password Reset Complete
-  - ![screenshot](documentation/wireframes/mobile-gallery.png)
-
-
 Logout
   - ![screenshot](documentation/wireframe/sign_out_iphone.png)
 
@@ -602,7 +585,7 @@ The delployed Heroku application behaves slower.
 
 | Source | Location | Type | Notes |
 | --- | --- | --- | --- |
-| [TinyPNG](https://tinypng.com) | entire site | image | tool for image compression |
+| [Designer Image Creator](https://www.bing.com/images/create?) | entire site | image | tool to create images for website |
 
 ### Acknowledgements
 
