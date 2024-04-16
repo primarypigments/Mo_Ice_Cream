@@ -109,10 +109,6 @@ Delete Reservation
 Logout
   - ![screenshot](documentation/wireframe/sign_out_iphone.png)
 
-
-etc.
-  - repeat for any remaining mobile wireframes
-
 </details>
 
 ### Tablet Wireframes
@@ -232,6 +228,12 @@ Logout
     - Users can permanently remove a reservation from their history with the delete reservation feature. This functionality is particularly useful for keeping the user's booking history organized and relevant. It also respects the user's preference for privacy and control over their data, aligning with best practices for user experience and data management.
 
 ![screenshot](documentation/features/reservation_delete.png)
+
+- **404**
+
+    - To improve user experience when they navigate to a non-existent page on your website.
+
+![screenshot](documentation/features/404.png)
 
 ### Future Features
 
