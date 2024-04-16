@@ -166,7 +166,7 @@ Contact
   - ![screenshot](documentation/wireframe/contact.png)
 
 Login
-  - ![screenshot](documentation/wireframe/sign in.png)
+  - ![screenshot](documentation/wireframe/sign_in.png)
 
 Register
   - ![screenshot](documentation/wireframe/register.png)
@@ -207,7 +207,7 @@ Logout
 
     - A password reset feature is crucial for user convenience and security, providing a straightforward way for users to recover their accounts in case they forget their passwords. This functionality underscores your commitment to protecting user data and ensuring easy access to their accounts, thereby fostering trust and reliability in Mo Ice Cream website.
 
-![screenshot](documentation/features/feature02.png)
+![screenshot](documentation/features/password_reset.png)
 
 - **Calendar Widget for Making a Reservation**
 
