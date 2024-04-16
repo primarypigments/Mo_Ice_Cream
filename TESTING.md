@@ -112,64 +112,52 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Flavors modal close Button is expected to to close tho modal when the user clicks on it | Tested the feature by doing clicking on the buttom | The feature behaved as expected, and closed when clicked | Test concluded and passed | ![screenshot](documentation/features/mod_fla.png) |
 | | Village Pop Up modal Close Button is expected to to close tho modal when the user clicks on it | Tested the feature by doing clicking on the buttom | The feature behaved as expected, and closed when clicked | Test concluded and passed | ![screenshot](documentation/features/mod_cate.png) |
 | | How to book Close Button modal is expected to to close tho modal when the user clicks on it | Tested the feature by doing clicking on the buttom | The feature behaved as expected, and closed when clicked | Test concluded and passed | ![screenshot](documentation/features/mod_book.png) |
-|
 | Contact | | | | | |
 | | Name is expected to be required when the user does not not fill it out | Tested the feature by leaving it blank | The feature behaved as expected, and it give the user a message a the input is required | Test concluded and passed | ![screenshot](documentation/features/name.png) |
 | | Email is expected to be required when the user does not not fill it out | Tested the feature by leaving it blank | The feature behaved as expected, and it give the user a message a the input is required | Test concluded and passed | ![screenshot](documentation/features/email.png) |
 | |Message is expected to be required when the user does not not fill it out | Tested the feature by leaving it blank | The feature behaved as expected, and it give the user a message a the input is required | Test concluded and passed | ![screenshot](documentation/features/message.png) |
 | |Send Message Button is expected to send message to sever so that the admin can reply | Tested the feature by clicking the button | The feature behaved as expected, and it give the user a message that message was sent | Test concluded and passed | ![screenshot](documentation/features/send_message.png) |
-|
 | Register | | | | | |
 | | Username is expected to be required when the user does not not fill it out | Tested the feature by leaving it blank | The feature behaved as expected, and it give the user a message a the input is required | Test concluded and passed | ![screenshot](documentation/features/username.png) |
 | | Email is expected to be required when the user does not not fill it out and will only accept email address format | Tested the feature by leaving it blank | The feature behaved as expected, and it give the user a message a the input is required or enter a valid email format message | Test concluded and passed | ![screenshot](documentation/features/email.png) |
 | |Password is expected to be required when the user does not not fill it out and will only accept password format | Tested the feature by leaving it blank and inouting a invalid passowrd format | The feature behaved as expected, and it give the user a message a the input is required or in enter valid format | Test concluded and passed | ![screenshot](documentation/features/password.png) |
 | | Register Button is expected to post registration of user when user clicks on the button | Tested the feature by doing clicking on button | The feature behaved as expected, and it gave success message | Test concluded and passed | ![screenshot](documentation/features/register_button.png) |
-|
 | Sign In | | | | | |
 | | Username is expected to be required when the user does not not fill it out | Tested the feature by leaving it blank | The feature behaved as expected, and it give the user a message a the input is required | Test concluded and passed | ![screenshot](documentation/features/username.png) |
 | | Sign In Button is expected when successfull redirect to index page with a success message  | Tested the feature by filling out a valid username and password and clicking the sign in button | The feature behaved as expected, and it redirected to index page with success message. | Test concluded and passed | ![screenshot](documentation/features/signin_button.png) |
 | | Forgot Passowrd Button expected to redirect to a forgot password page. | Tested the feature by clicking the button | The feature behaved as expected, and it redirected the user to the forgot passowrd page. | Test concluded and passed | ![screenshot](documentation/features/forgot_pw.png) |
-|
 | MaKe Reservation | | | | | |
 | | Phone Number is expected to be required when the user does not not fill it out | Tested the feature by leaving it blank | The feature behaved as expected, and it give the user a message a the input is required | Test concluded and passed | ![screenshot](documentation/features/phone_number.png) |
 | | Date Calendar is expected to display a calendar for the user to pick a date | Tested the feature by doing the calendar icon | The feature behaved as expected, and it displayed a calaendar | Test concluded and passed | ![screenshot](documentation/features/widget_calendar.png) |
 | | Time Slot is expected to display a list when the user click on the input field | Tested the feature by doing clicking input field | The feature behaved as expected, and it displayed a list | Test concluded and passed | ![screenshot](documentation/features/time_slot.png) |
 | | Location is expected to display a list when the user click on the input field | Tested the feature by doing clicking input field | The feature behaved as expected, and it displayed a list | Test concluded and passed | ![screenshot](documentation/features/location.png) |
 | | Submit Reservation Button expected to redirect to a profile page with a success message. | Tested the feature by clicking the button | The feature behaved as expected, and it redirected the user to the profile page with a success message. | Test concluded and passed | ![screenshot](documentation/features/reservation_submit.png) |
-|
 | Profile | | | | | |
 | | Reservation list is expected to display users reservations when a user makes a reservation | Tested the feature by doing making a reservation | The feature behaved as expected, and it displays reservations | Test concluded and passed | ![screenshot](documentation/features/profile_l.png) |
 | | Edit Reservation Button expected to redirect to a Edit Reservation page. | Tested the feature by clicking the button | The feature behaved as expected, and it redirected the user to the Edit Reservation. | Test concluded and passed | ![screenshot](documentation/features/reservation_edit.png) |
 | | Cancel Reservation Button expected to redirect to a Cancel Reservation with. | Tested the feature by clicking the button | The feature behaved as expected, and it redirected the user to the Cancel Reservation Page. | Test concluded and passed | ![screenshot](documentation/features/reservation_cancel.png) |
 | |Delete Reservation Button expected to redirect to a Cancel Reservation with. | Tested the feature by clicking the button | The feature behaved as expected, and it redirected the user to the Delete Reservation Page. | Test concluded and passed | ![screenshot](documentation/features/reservation_delete.png) |
-|
 | Edit Reservtion | | | | | |
 | | Phone Number is expected to be required when the user does not not fill it out | Tested the feature by leaving it blank | The feature behaved as expected, and it give the user a message a the input is required | Test concluded and passed | ![screenshot](documentation/features/phone_number.png) |
 | | Date Calendar is expected to display a calendar for the user to pick a date | Tested the feature by doing the calendar icon | The feature behaved as expected, and it displayed a calaendar | Test concluded and passed | ![screenshot](documentation/features/widget_calendar.png) |
 | | Time Slot is expected to display a list when the user click on the input field | Tested the feature by doing clicking input field | The feature behaved as expected, and it displayed a list | Test concluded and passed | ![screenshot](documentation/features/time_slot.png) |
 | | Location is expected to display a list when the user click on the input field | Tested the feature by doing clicking input field | The feature behaved as expected, and it displayed a list | Test concluded and passed | ![screenshot](documentation/features/location.png) |
 | | Edit Reservation Button expected to redirect to a profile page with a success message. | Tested the feature by clicking the button | The feature behaved as expected, and it redirected the user to the profile page with a success message. | Test concluded and passed | ![screenshot](documentation/features/reservation_edit.png) |
-|
 | Cancel Reservation | | | | | |
 | | Cancel Reservation Button expected to redirect to a profile page with a success message. | Tested the feature by clicking the button | The feature behaved as expected, and it redirected the user to the profile page with a success message. | Test concluded and passed | ![screenshot](documentation/features/cancel.png) |
 | | Cancel Button expected to redirect to a profile page. | Tested the feature by clicking the button | The feature behaved as expected, and it redirected the user to the profile page. | Test concluded and passed | ![screenshot](documentation/features/cancel.png) |
- |
 | Delete Reservation | | | | | |
 | | Delete Reservation Button expected to redirect to a profile page with a success message. | Tested the feature by clicking the button | The feature behaved as expected, and it redirected the user to the profile page with a success message. | Test concluded and passed | ![screenshot](documentation/features/delete.png) |
 | | Cancel Button expected to redirect to a profile page. | Tested the feature by clicking the button | The feature behaved as expected, and it redirected the user to the profile page. | Test concluded and passed | ![screenshot](documentation/features/delete.png) | |
-|
 | Sign out | | | | | |
 | | Sign Out Button is expected sign out user and redirect to index page with a success message  | Tested the feature by clicking the sign out button | The feature behaved as expected, and it redirected to index page with success message. | Test concluded and passed | ![screenshot](documentation/features/signout_buttons.png) |
-|
 | Forgot Password | | |
 | | Email is expected to be required when the user does not not fill it out and will only accept email address format | Tested the feature by leaving it blank | The feature behaved as expected, and it give the user a message a the input is required or enter a valid email format message | Test concluded and passed | ![screenshot](documentation/features/email.png) |
 | | Reset My Password Button is expected to send a email to user with reset password link and then redirect user to reset info page. | Tested the feature by doing filling out email inout and clicking Reset Password Button. | The feature behaved as expected, and it send a email and redirected to info page. | Test concluded and passed | ![screenshot](documentation/features/password_reset.png) | |
-|
 | Change Password | | | | | |
 | | Password is expected to be required when the user does not not fill it out and will only accept password format | Tested the feature by leaving it blank and inouting a invalid passowrd format | The feature behaved as expected, and it give the user a message a the input is required or in enter valid format | Test concluded and passed | ![screenshot](documentation/features/change_password_again.png) |
 | | Reenter Password is expected to be required when the user does not not fill it out | Tested the feature by leaving it blank | The feature behaved as expected, and it give the user a message a the input is required | Test concluded and passed | ![screenshot](documentation/features/change_password_again.png) |
 | | Change Password Button is expected to redirect user to password change confirmation page. | Tested the feature by doing filling out email inout and clicking Change Password Button. | The feature behaved as expected, and it  redirected to password change confirmation page. | Test concluded and passed | ![screenshot](documentation/features/change_password.png) | |
-|
 | Messages | |
 | | Success Messages is expected when user successfully sign in, sign out, register, reservation, edit reservation, cancel reservation, delete reservation  user is shown a green success message  | Tested the feature by successfully sign in, sign out, register, reservation, edit reservation, cancel reservation, delete reservation | The feature behaved as expected, and they show user a green success message. | Test concluded and passed | ![screenshot](documentation/features/success_messages.png) |
 
