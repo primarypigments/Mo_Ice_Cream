@@ -356,13 +356,7 @@ source: [medium.com](https://medium.com/@yathomasi1/1-using-django-extensions-to
 [GitHub Projects](https://github.com/primarypigments/mo_ice_cream/projects) served as an Agile tool for this project.
 It isn't a specialized tool, but with the right tags and project creation/issue assignments, it can be made to work.
 
-Through it, user stories, issues, and milestone tasks were planned, then tracked on a weekly basis using the basic Kanban board.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
-
-Consider adding a basic screenshot of your Projects Board.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
+Through it, user stories, issues, and milestone tasks were planned, then tracked on a weekly basis using the basic Kanban board.000000000
 
 ![screenshot](documentation/gh-projects.png)
 
@@ -372,12 +366,6 @@ Consider adding a basic screenshot of your Projects Board.
 There, I used my own **User Story Template** to manage user stories.
 
 It also helped with milestone iterations on a weekly basis.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 START OF NOTES (to be deleted)
-
-Consider adding a screenshot of your Open and Closed Issues.
-
-🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑-END OF NOTES (to be deleted)
 
 - [Open Issues](https://github.com/primarypigments/mo_ice_cream/issues) [![GitHub issues](https://img.shields.io/github/issues/primarypigments/mo_ice_cream)](https://github.com/primarypigments/mo_ice_cream/issues)
 
@@ -599,15 +587,15 @@ The delployed Heroku application behaves slower.
 | [Digital Ocean](https://www.digitalocean.com/community/tutorials/python-valueerror-exception-handling-examples) | entire site | used for vauleerror thorughout my code. |
 | [YouTube](https://www.youtube.com/watch?v=rfscVS0vtbw) | entire site | used for a tutorial for Getting Input From Users (48:26). |
 | [ChatGPT](https://chat.openai.com/) | entire site | used for list contents (Villages within 10 km from Kakentrorf) understanding error messages, help with learning the correct vocabulary in commit messages. |
-| [Django](https://docs.djangoproject.com/en/4.2/topics/db/models/) | entire site | core concept of defining models. |
-| [Django](https://docs.djangoproject.com/en/4.2/ref/models/fields/#field-options) | entire site |  Understanding how to use field options such as null, blank, and default. |
-| [Django](https://docs.djangoproject.com/en/4.2/ref/validators/) | entire site | create and use custom validators for model fields to enforce specific rules or formats. |
-| [Django](https://docs.djangoproject.com/en/4.2/ref/models/fields/#datetimefield) | entire site | used to automatically set the field to the current date/time. |
-| [Django](https://docs.djangoproject.com/en/4.2/ref/models/options/#unique-together) | entire site | used to utilized the unique_together. |
-| [Django](https://docs.djangoproject.com/en/4.2/ref/templates/builtins/) | entire site | used for built-in template tags and filters. |
-| [Django](https://docs.djangoproject.com/en/4.2/ref/contrib/messages/) | entire site | used for store messages in one request. |
-| [Django](https://docs.djangoproject.com/en/4.2/topics/logging/) | entire site | used to perform system logging. |
-| [Django](https://docs.djangoproject.com/en/4.2/topics/forms/modelforms/) | entire site | used for creating forms from models automatically,. |
+| [Django](https://docs.djangoproject.com/en/4.2/topics/db/models/) | models.py | core concept of defining models. |
+| [Django](https://docs.djangoproject.com/en/4.2/ref/models/fields/#field-options) | models.py |  Understanding how to use field options such as null, blank, and default. |
+| [Django](https://docs.djangoproject.com/en/4.2/ref/validators/) | validators.py | create and use custom validators for model fields to enforce specific rules or formats. |
+| [Django](https://docs.djangoproject.com/en/4.2/ref/models/fields/#datetimefield) | validators.py | used to automatically set the field to the current date/time. |
+| [Django](https://docs.djangoproject.com/en/4.2/ref/models/options/#unique-together) | Models.py | used to utilized the unique_together. |
+| [Django](https://docs.djangoproject.com/en/4.2/ref/templates/builtins/) | templates | used for built-in template tags and filters. |
+| [Django](https://docs.djangoproject.com/en/4.2/ref/contrib/messages/) | forms.py | used for store messages in one request. |
+| [Django](https://docs.djangoproject.com/en/4.2/topics/logging/) | views.py | used to perform system logging. |
+| [Django](https://docs.djangoproject.com/en/4.2/topics/forms/modelforms/) | forms.py | used for creating forms from models automatically. |
 
 
 ### Media
