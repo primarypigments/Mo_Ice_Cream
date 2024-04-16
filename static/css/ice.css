@@ -97,6 +97,14 @@ li.nav-item {
   background-color: #faf5ee; 
 }
 
+/* Modal link styles */
+.highlight-modal-link {
+  color: #e96a3f;     
+  font-weight: bold;  
+  font-size: 18px;    
+  text-decoration: underline;
+}
+
 /* Services section styles */
 .services {
   background-color: #faf5ee;
